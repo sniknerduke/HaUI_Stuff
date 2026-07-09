@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<script>
+    function tinhtien() {
+        const giatrc18h = 40000;
+        const giasau18h = 60000;
+
+        var x = parseInt(window.document.form1.k1.value);
+        var y = parseInt(window.document.form1.k2.value);
+        let tien = 0;
+        if (isNaN(x) || isNaN(y)) {
+            alert("Vui lòng nhập số hợp lệ cho giờ bắt đầu và giờ kết thúc.");
+            return; 
+        }
+
+        if (x < 0 || x > 24 || y < 0 || y > 24) {
+            alert("Giờ bắt đầu và giờ kết thúc phải nằm trong khoảng từ 0 đến 24.");
+            return; 
+        }
+        for (var i = x ; i < y ; i++) {
+            
+            if (i < 18) {
+                tien += giatrc18h;
+            }
+            else {
+                tien += giasau18h;
+            }
+        }
+        window.document.form1.k3.value = tien;
+    }
+    function xoa() {
+        window.document.form1.k1.value = null;
+        window.document.form1.k2.value = null;
+        window.document.form1.k3.value = null;
+
+    }
+</script>
+<body>
+    <form action="" name="form1">
+    <table border="1" style="width: 100%">
+        <tr style="height: 50px;">
+            <td colspan="2">Tính tiền karaoke</td>
+        </tr>
+        <tr>
+            <td>Giờ vào :</td>
+            <td><input type="text" name="k1" id=""></td>
+        </tr>
+        <tr>
+            <td>Giờ ra :</td>
+            <td><input type="text" name="k2" id=""></td>
+        </tr>
+        <tr>
+            <td>Tổng tiền :</td>
+            <td><input type="text" name="k3" id=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="button" name="" id="" style="width: 50px;" value="xóa" onclick="xoa()"><input type="button" name="" id=""value="tổng"  style="width: 50px;" onclick="tinhtien()"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

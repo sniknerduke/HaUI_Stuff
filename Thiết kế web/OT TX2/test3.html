@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<script>
+    function tinhtong() {
+        var x = parseInt(window.document.form1.k3.value);
+        var y = parseInt(window.document.form1.k4.value);
+        var z = parseInt(window.document.form1.k5.value);
+        var tong = x+y+z
+        window.document.form1.k6.value = tong;
+        if (tong >= 15) {
+            window.document.form1.k7.value = "Đỗ";
+        }
+        else {
+            window.document.form1.k7.value = "Trượt";
+        }
+    }
+    function xoa() {
+        window.document.form1.k1.value = null;
+        window.document.form1.k2.value = null;
+        window.document.form1.k3.value = null;
+        window.document.form1.k4.value = null;
+        window.document.form1.k5.value = null;
+        window.document.form1.k6.value = null;
+        window.document.form1.k7.value = null;
+
+    }
+</script>
+<body>
+    <form action="" name="form1">
+    <table border="1" style="width: 100%">
+        <tr style="height: 50px;">
+            <td colspan="2">Quản lý điểm</td>
+        </tr>
+        <tr>
+            <td>Mẫ học sinh:</td>
+            <td><input type="text" name="k1" id=""></td>
+        </tr>
+        <tr>
+            <td>Họ Tên</td>
+            <td><input type="text" name="k2" id=""></td>
+        </tr>
+        <tr>
+            <td>Điểm Toán</td>
+            <td><input type="text" name="k3" id=""></td>
+        </tr>
+        <tr>
+            <td>Điểm Văn</td>
+            <td><input type="text" name="k4" id=""></td>
+        </tr>
+        <tr>
+            <td>Điểm Ngoại ngữ</td>
+            <td><input type="text" name="k5" id=""></td>
+        </tr>
+        <tr>
+            <td>Tổng Điểm</td>
+            <td><input type="text" name="k6" id=""></td>
+        </tr>
+        <tr>
+            <td>Kết Quả</td>
+            <td><input type="text" name="k7" id=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="button" name="" id="" style="width: 50px;" value="Tính" onclick="tinhtong()"><input type="button" name="" id=""value="Xóa"  style="width: 50px; " onclick="xoa()" ></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

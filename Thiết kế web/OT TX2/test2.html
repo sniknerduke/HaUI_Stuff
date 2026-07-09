@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<script>
+    function tinhdayso() {
+        var x = parseInt(window.document.form1.k1.value);
+        let tong = 0;
+        if (isNaN(x) || x <= 0) {
+            alert("Vui lòng nhập một số nguyên dương.");
+            return;
+        }
+        let shit = 0 ;
+        function isPrime(num) {
+            if (num < 2) return false; // Số nhỏ hơn 2 không phải số nguyên tố
+            for (let j = 2; j <= Math.sqrt(num); j++) {
+                if (num % j === 0) {
+                    return false; // Không phải số nguyên tố
+            }
+        }
+        return true; // Là số nguyên tố
+        }
+        for (let i = 1; i <= x; i++) {
+        if (isPrime(i)) { // Nếu i là số nguyên tố
+            tong += i;
+        }
+    }
+        window.document.form1.k2.value = tong;
+    }
+    function xoa() {
+        window.document.form1.k1.value = null;
+        window.document.form1.k2.value = null;
+
+    }
+</script>
+<body>
+    <form action="" name="form1">
+    <table border="1" style="width: 100%">
+        <tr style="height: 50px;">
+            <td colspan="2">Tính tổng dãy số</td>
+        </tr>
+        <tr>
+            <td>Nhập n :</td>
+            <td><input type="text" name="k1" id=""></td>
+        </tr>
+        <tr>
+            <td>Tổng dãy số</td>
+            <td><input type="text" name="k2" id=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="button" name="" id="" style="width: 50px;" value="Tính" onclick="tinhdayso()"><input type="button" name="" id=""value="Xóa"  style="width: 50px; " onclick="xoa()" ></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

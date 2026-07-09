@@ -1,0 +1,25 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    max-width: 400px;
+}

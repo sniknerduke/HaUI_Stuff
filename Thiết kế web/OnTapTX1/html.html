@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Name - Student ID</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search" class="search-input">
+            <select class="search-categories">
+                <option value="categories">Categories</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button class="search-button">
+                <img src="search-icon.png" alt="Search Icon" class="search-icon">
+            </button>
+        </div>
+        <div class="cart">0 Item(s) - $0.00</div>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="women-menu"><a href="#">Women ▼</a>
+                <ul class="submenu">
+                    <li><a href="#">Clothing (0)</a></li>
+                    <li><a href="#">Coats (0)</a></li>
+                    <li><a href="#">T-Shirts (0)</a></li>
+                    <li><a href="#">Tennis (0)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">The Girl Racing Bicycle</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Pagination Controls -->
+        <div class="pagination">
+            <button style="float: left;"><img src="something.jpg" alt=""></button>
+            <button style="float: left;"><img src="something.jpg" alt=""></button>
+            <select class="search-categories" style="float: left; height: 31px; margin-right: 10px; width: 200px;border: 1px solid #ccc;">
+                <option value="categories">Default</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <select class="search-categories" style="float: left; height: 31px;width: 50px;border: 1px solid #ccc;" >
+                <option value="categories">9</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button>&lt;</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>&gt;</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <span class="label new">NEW</span>
+                <img src="shopping1.jpg" alt="Apple Cinema 30" class="product-image">
+                <h3>Apple Cinema 30"</h3>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p class="price">
+                    <span class="discount-price">$110.00</span>
+                    <span class="old-price">$122.00</span>
+                </p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <span class="label sale">SALE</span>
+                <img src="shopping2.jpg" alt="Canon EOS 5D" class="product-image">
+                <h3>Canon EOS 5D</h3>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p class="price">
+                    <span class="discount-price">$98.00</span>
+                    <span class="old-price">$122.00</span>
+                </p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <span class="label new">NEW</span>
+                <img src="shopping3.jpg" alt="Canon EOS 5D" class="product-image">
+                <h3>Canon EOS 5D</h3>
+                <div class="stars">
+                    ★★★★★
+                </div>
+                <p class="price">
+                    <span class="discount-price">$98.00</span>
+                    <span class="old-price">$122.00</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
