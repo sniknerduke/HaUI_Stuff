@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "NhapDL";
+}
+
+<h2>NhapDL</h2>
+
+@using (Html.BeginForm("KetQua", "QuanLyNV", FormMethod.Post))
+{
+    <p>Ma nv : @Html.TextBox("manv")</p>
+    <p>Ho ten : @Html.TextBox("hoten")</p>
+    <p>Dia chi : <select name="diachi">
+    <option value="HaNoi">HaNoi</option>
+    <option value="Hải Phòng">Hải Phòng</option>
+    <option value="Quảng Ninh">Quảng Ninh</option>
+</select></p>
+    
+    <p>So ngay lam : <input type="number" name="songaylam" required /></p>
+    <p>Luong ngay : <input type="number" name="luongngay" required /></p>
+    <input type="submit" value="Luu tt" />
+}

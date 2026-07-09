@@ -1,0 +1,16 @@
+﻿@{ ViewBag.Title = "Thêm sản phẩm"; }
+
+<h3>Nhập dữ liệu sản phẩm mới</h3>
+@using (Html.BeginForm("KetQua", "Sanpham", FormMethod.Post))
+{
+    <p>Mã sản phẩm: @Html.TextBox("masp")</p>
+    <p>Tên sản phẩm: @Html.TextBox("tensanpham")</p>
+    <p>Số lượng: @Html.TextBox("soluong", null, new { type = "number", required = "required" })</p>
+    <p>Giá tiền: @Html.TextBox("giatien", null, new { type = "number", step = "any", required = "required" })</p>
+    <p>
+        Giảm giá:
+        @Html.RadioButton("giamgia", "true") Có
+        @Html.RadioButton("giamgia", "false", new { @checked = "checked" }) Không
+    </p>
+    <input type="submit" value="Tính thành tiền" />
+}

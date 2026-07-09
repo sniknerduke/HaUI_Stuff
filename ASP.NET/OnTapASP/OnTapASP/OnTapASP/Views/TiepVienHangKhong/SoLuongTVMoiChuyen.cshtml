@@ -1,0 +1,31 @@
+﻿@model IEnumerable<OnTapASP.Models.BoPhan>
+
+@{
+    ViewBag.Title = "SoLuongTVMoiChuyen";
+}
+
+<h2>SoLuongTVMoiChuyen</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Tên Chuyến Bay
+        </th>
+        <th>
+            Số lượng tiếp viên
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.TenBoPhan
+        </td>
+        <td>
+            @item.TiepViens.Count()
+        </td>
+    </tr>
+}
+
+</table>

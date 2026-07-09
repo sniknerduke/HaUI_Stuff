@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|e:\\tai lieu hoc tap\\asp.net\\ontapasp\\ontapasp\\views\\tiepvienhangkhong\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\tiepvienhangkhong\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\views\\tiepvienhangkhong\\getbybophan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\tiepvienhangkhong\\getbybophan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\controllers\\tiepvienhangkhongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\controllers\\tiepvienhangkhongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\views\\tiepvienhangkhong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\tiepvienhangkhong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\views\\tiepvienhangkhong\\gettenbophan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\tiepvienhangkhong\\gettenbophan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\views\\tiepvienhangkhong\\soluongtvmoichuyen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\views\\tiepvienhangkhong\\soluongtvmoichuyen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\ontapasp\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2C9888F-20D7-4F78-80DE-56AC2C1379BF}|OnTapASP\\OnTapASP.csproj|solutionrelative:ontapasp\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T16:12:01.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TiepVienHangKhongController.cs",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Controllers\\TiepVienHangKhongController.cs",
+              "RelativeDocumentMoniker": "OnTapASP\\Controllers\\TiepVienHangKhongController.cs",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Controllers\\TiepVienHangKhongController.cs",
+              "RelativeToolTip": "OnTapASP\\Controllers\\TiepVienHangKhongController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAA8wCMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T14:17:23.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswB0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T14:35:52.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "OnTapASP\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "OnTapASP\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T15:32:26.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetByBoPhan.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\GetByBoPhan.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\TiepVienHangKhong\\GetByBoPhan.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\GetByBoPhan.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\TiepVienHangKhong\\GetByBoPhan.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T15:21:20.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\Login\\Login.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T15:56:31.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswE4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T14:26:23.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetTenBoPhan.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\GetTenBoPhan.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\TiepVienHangKhong\\GetTenBoPhan.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\GetTenBoPhan.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\TiepVienHangKhong\\GetTenBoPhan.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T15:23:42.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SoLuongTVMoiChuyen.cshtml",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\SoLuongTVMoiChuyen.cshtml",
+              "RelativeDocumentMoniker": "OnTapASP\\Views\\TiepVienHangKhong\\SoLuongTVMoiChuyen.cshtml",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Views\\TiepVienHangKhong\\SoLuongTVMoiChuyen.cshtml",
+              "RelativeToolTip": "OnTapASP\\Views\\TiepVienHangKhong\\SoLuongTVMoiChuyen.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-16T15:00:00.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "OnTapASP\\Models\\Model1.cs",
+              "ToolTip": "E:\\Tai Lieu Hoc Tap\\ASP.net\\OnTapASP\\OnTapASP\\Models\\Model1.cs",
+              "RelativeToolTip": "OnTapASP\\Models\\Model1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T14:14:49.133Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

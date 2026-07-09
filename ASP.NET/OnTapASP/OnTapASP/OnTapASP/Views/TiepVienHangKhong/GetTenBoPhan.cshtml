@@ -1,0 +1,7 @@
+﻿@model IEnumerable<OnTapASP.Models.BoPhan>
+
+@foreach(var item in Model)
+{
+    var url = "/GetByBoPhan/" + item.MaBoPhan;
+    <li><a href="@url" class="nav-link">@item.TenBoPhan</a></li>
+}

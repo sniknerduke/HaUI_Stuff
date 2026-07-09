@@ -1,0 +1,8 @@
+@model IEnumerable<KTHP1.Models.BoPhan>
+
+@foreach (var bp in Model)
+{
+    <li>
+        @Html.ActionLink(bp.TenBoPhan, "DanhSachTheoBoPhan", "TiepVienHangKhong", new { maBP = bp.MaBoPhan }, null)
+    </li>
+}

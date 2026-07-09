@@ -1,0 +1,39 @@
+@{
+    ViewBag.Title = "Đăng nhập";
+}
+
+<h2>Đăng nhập</h2>
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Đăng nhập hệ thống</h4>
+        <hr />
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="hoTen">Họ và tên</label>
+            <div class="col-md-10">
+                <input type="text" id="hoTen" name="hoTen" class="form-control" required="required" placeholder="Nhập họ tên tiếp viên..." />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="matKhau">Mật khẩu</label>
+            <div class="col-md-10">
+                <input type="password" id="matKhau" name="matKhau" class="form-control" required="required" placeholder="Nhập mật khẩu..." />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Đăng nhập" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}

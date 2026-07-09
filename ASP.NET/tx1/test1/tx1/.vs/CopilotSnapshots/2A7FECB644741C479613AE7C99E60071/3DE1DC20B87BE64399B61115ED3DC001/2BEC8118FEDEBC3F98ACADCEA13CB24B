@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "NhapDL";
+}
+
+<h2>NhapDL</h2>
+@using (Html.BeginForm("KetQua", "Sanpham", FormMethod.Post))
+{
+    <p>Mã sản phẩm: @Html.TextBox("masp")</p>
+    <p>
+        Hãng sản xuất:
+        @Html.RadioButton("hangsx", "Apple", true) Apple
+        @Html.RadioButton("hangsx", "Xiaomi") Xiaomi
+    </p>
+    <p>Tên sản phẩm: @Html.TextBox("tensp")</p>
+    <p>Số lượng: <input type="number" name="soluong" /></p>
+    <p>Giá tiền: <input type="number" name="giatien" step="any" /></p>
+    <input type="submit" value="Tính tổng tiền" />
+}

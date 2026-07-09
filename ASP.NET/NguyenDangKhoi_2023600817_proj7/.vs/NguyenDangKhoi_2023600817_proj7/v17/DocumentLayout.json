@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|d:\\college stuff\\asp.net\\nguyendangkhoi_2023600817_proj7\\nguyendangkhoi_2023600817_proj7\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|solutionrelative:nguyendangkhoi_2023600817_proj7\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|d:\\college stuff\\asp.net\\nguyendangkhoi_2023600817_proj7\\nguyendangkhoi_2023600817_proj7\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|solutionrelative:nguyendangkhoi_2023600817_proj7\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|d:\\college stuff\\asp.net\\nguyendangkhoi_2023600817_proj7\\nguyendangkhoi_2023600817_proj7\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|solutionrelative:nguyendangkhoi_2023600817_proj7\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|d:\\college stuff\\asp.net\\nguyendangkhoi_2023600817_proj7\\nguyendangkhoi_2023600817_proj7\\views\\calculator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|solutionrelative:nguyendangkhoi_2023600817_proj7\\views\\calculator\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|d:\\college stuff\\asp.net\\nguyendangkhoi_2023600817_proj7\\nguyendangkhoi_2023600817_proj7\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C9C233C-D8F4-4EB6-ACE5-DBE9C9109810}|NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7.csproj|solutionrelative:nguyendangkhoi_2023600817_proj7\\controllers\\calculatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalculatorController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Controllers\\CalculatorController.cs",
+              "RelativeDocumentMoniker": "NguyenDangKhoi_2023600817_proj7\\Controllers\\CalculatorController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Controllers\\CalculatorController.cs",
+              "RelativeToolTip": "NguyenDangKhoi_2023600817_proj7\\Controllers\\CalculatorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T17:20:30.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Views\\Calculator\\Index.cshtml",
+              "RelativeDocumentMoniker": "NguyenDangKhoi_2023600817_proj7\\Views\\Calculator\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Views\\Calculator\\Index.cshtml",
+              "RelativeToolTip": "NguyenDangKhoi_2023600817_proj7\\Views\\Calculator\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-17T17:20:30.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistrationModel.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Models\\RegistrationModel.cs",
+              "RelativeDocumentMoniker": "NguyenDangKhoi_2023600817_proj7\\Models\\RegistrationModel.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Models\\RegistrationModel.cs",
+              "RelativeToolTip": "NguyenDangKhoi_2023600817_proj7\\Models\\RegistrationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T17:20:30.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Views\\Registration\\Index.cshtml",
+              "RelativeDocumentMoniker": "NguyenDangKhoi_2023600817_proj7\\Views\\Registration\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Views\\Registration\\Index.cshtml",
+              "RelativeToolTip": "NguyenDangKhoi_2023600817_proj7\\Views\\Registration\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-17T17:20:29.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "NguyenDangKhoi_2023600817_proj7\\Controllers\\RegistrationController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\NguyenDangKhoi_2023600817_proj7\\NguyenDangKhoi_2023600817_proj7\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "NguyenDangKhoi_2023600817_proj7\\Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T17:20:28.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

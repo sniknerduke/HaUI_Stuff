@@ -1,0 +1,37 @@
+﻿@model IEnumerable<OnTapASP.Models.TiepVien>
+
+@{
+    ViewBag.Title = "LuongTiepVien";
+    double tongluong = 0;
+}
+
+<h2>LuongTiepVien</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Tên tiếp viên
+        </th>
+        <th>
+            Lương
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    tongluong += item.Luong;
+    <tr>
+        <td>
+            @item.HoTen
+        </td>
+        <td>
+            @item.Luong
+        </td>
+    </tr>
+}
+    <tr>
+        <td><b>Tổng lương:</b> </td>
+        <td><b>@tongluong</b></td>
+    </tr>
+
+</table>

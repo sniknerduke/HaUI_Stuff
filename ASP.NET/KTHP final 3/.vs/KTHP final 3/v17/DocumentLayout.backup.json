@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\KTHP final 3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|d:\\college stuff\\asp.net\\kthp final 3\\kthp final 3\\views\\tiepvienhangkhong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\controllers\\tiepvienhangkhongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\controllers\\tiepvienhangkhongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\tiepvienhangkhong\\luongcao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\luongcao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\tiepvienhangkhong\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\tiepvienhangkhong\\menubp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\menubp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\tiepvienhangkhong\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\tiepvienhangkhong\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\tiepvienhangkhong\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\tiepvienhangkhong\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\models\\tiepvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\models\\tiepvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|D:\\College stuff\\ASP.NET\\KTHP final 3\\kthp final 3\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4A7EF2-9EBF-4289-8339-778E9EEAB378}|KTHP final 3\\KTHP final 3.csproj|solutionrelative:kthp final 3\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Web.config",
+              "RelativeDocumentMoniker": "KTHP final 3\\Web.config",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Web.config",
+              "RelativeToolTip": "KTHP final 3\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-18T03:13:11.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T03:04:04.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "KTHP final 3\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Controllers\\LoginController.cs*",
+              "RelativeToolTip": "KTHP final 3\\Controllers\\LoginController.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA3wCQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T03:01:04.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuBP.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\MenuBP.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\MenuBP.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\MenuBP.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\MenuBP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:57:50.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LuongCao.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\LuongCao.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\LuongCao.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\LuongCao.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\LuongCao.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:56:21.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KTHP final 3\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KTHP final 3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T02:55:03.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:54:33.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:52:53.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Delete.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\Delete.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Delete.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:52:23.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TiepVien.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Models\\TiepVien.cs",
+              "RelativeDocumentMoniker": "KTHP final 3\\Models\\TiepVien.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Models\\TiepVien.cs",
+              "RelativeToolTip": "KTHP final 3\\Models\\TiepVien.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T02:49:30.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "KTHP final 3\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "KTHP final 3\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T02:48:43.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAACkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:46:32.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Details.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\Details.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Details.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:46:32.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "RelativeDocumentMoniker": "KTHP final 3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "RelativeToolTip": "KTHP final 3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T02:32:33.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TiepVienHangKhongController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Controllers\\TiepVienHangKhongController.cs",
+              "RelativeDocumentMoniker": "KTHP final 3\\Controllers\\TiepVienHangKhongController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Controllers\\TiepVienHangKhongController.cs",
+              "RelativeToolTip": "KTHP final 3\\Controllers\\TiepVienHangKhongController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T02:31:10.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "KTHP final 3\\Models\\Model1.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP final 3\\KTHP final 3\\Models\\Model1.cs",
+              "RelativeToolTip": "KTHP final 3\\Models\\Model1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T02:30:25.005Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

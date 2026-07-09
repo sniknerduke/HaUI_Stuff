@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WineStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Catalogy">
+    <Key>
+      <PropertyRef Name="CatalogyID" />
+    </Key>
+    <Property Name="CatalogyID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="CatalogyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Products_Catalogy" FromRole="Catalogy" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PurchasePrice" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Vintage" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="CatalogyID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Catalogy" Relationship="Self.FK_Products_Catalogy" FromRole="Product" ToRole="Catalogy" />
+  </EntityType>
+  <Association Name="FK_Products_Catalogy">
+    <End Role="Catalogy" Type="Self.Catalogy" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogy">
+        <PropertyRef Name="CatalogyID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CatalogyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WineStoreEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Catalogies" EntityType="Self.Catalogy" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <AssociationSet Name="FK_Products_Catalogy" Association="Self.FK_Products_Catalogy">
+      <End Role="Catalogy" EntitySet="Catalogies" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

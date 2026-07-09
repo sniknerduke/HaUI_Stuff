@@ -1,0 +1,4 @@
+@model IEnumerable<tx2._2.Models.Category>
+@foreach (var item in Model) {
+    <li><a href="/shop/danhmuc/@item.Categoryid">@item.CategoryName</a></li>
+}

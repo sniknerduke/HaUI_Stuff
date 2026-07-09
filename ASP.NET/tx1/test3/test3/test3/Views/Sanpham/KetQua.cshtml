@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "KetQua";
+}
+
+@{ ViewBag.Title = "Kết quả"; }
+
+<h3>Thông tin sản phẩm vừa nhập</h3>
+<p>Mã sản phẩm: @Model.masp</p>
+<p>Tên sản phẩm: @Model.tensanpham</p>
+<p>Số lượng: @Model.soluong</p>
+<p>Giá tiền: @Model.giatien</p>
+<p>Giảm giá: @(Model.giamgia ? "Có" : "Không")</p>
+<p style="color:red; font-size: 18px;"><strong>Thành tiền: @Model.thanhtien</strong></p>

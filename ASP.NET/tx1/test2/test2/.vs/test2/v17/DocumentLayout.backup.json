@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\views\\quanlynv\\nhapdl.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\views\\quanlynv\\nhapdl.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\views\\quanlynv\\ketqua.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\views\\quanlynv\\ketqua.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\controllers\\quanlynvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\controllers\\quanlynvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\views\\quanlynv\\hienthids.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\views\\quanlynv\\hienthids.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|d:\\college stuff\\asp.net\\tx1\\test2\\test2\\test2\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1C46CA-3B98-444B-A505-F34B4D28802F}|test2\\test2.csproj|solutionrelative:test2\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "test2\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "test2\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T16:53:37.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "test2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "test2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T16:53:31.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "test2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "test2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T16:53:21.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KetQua.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\QuanLyNV\\KetQua.cshtml",
+              "RelativeDocumentMoniker": "test2\\Views\\QuanLyNV\\KetQua.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\QuanLyNV\\KetQua.cshtml",
+              "RelativeToolTip": "test2\\Views\\QuanLyNV\\KetQua.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T16:50:55.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhapDL.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\QuanLyNV\\NhapDL.cshtml",
+              "RelativeDocumentMoniker": "test2\\Views\\QuanLyNV\\NhapDL.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\QuanLyNV\\NhapDL.cshtml",
+              "RelativeToolTip": "test2\\Views\\QuanLyNV\\NhapDL.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T16:46:46.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HienThiDS.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\QuanLyNV\\HienThiDS.cshtml",
+              "RelativeDocumentMoniker": "test2\\Views\\QuanLyNV\\HienThiDS.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Views\\QuanLyNV\\HienThiDS.cshtml",
+              "RelativeToolTip": "test2\\Views\\QuanLyNV\\HienThiDS.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-14T16:42:14.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuanLyNVController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Controllers\\QuanLyNVController.cs",
+              "RelativeDocumentMoniker": "test2\\Controllers\\QuanLyNVController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Controllers\\QuanLyNVController.cs",
+              "RelativeToolTip": "test2\\Controllers\\QuanLyNVController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:36:07.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Models\\NhanVien.cs",
+              "RelativeDocumentMoniker": "test2\\Models\\NhanVien.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\tx1\\test2\\test2\\test2\\Models\\NhanVien.cs",
+              "RelativeToolTip": "test2\\Models\\NhanVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:32:38.57Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

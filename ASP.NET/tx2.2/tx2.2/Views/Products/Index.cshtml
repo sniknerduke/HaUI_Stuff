@@ -1,0 +1,51 @@
+﻿@model IEnumerable<tx2._2.Models.Product>
+
+<h3 class="alert alert-info text-center">DANH SÁCH TOÀN BỘ SẢN PHẨM</h3>
+
+@using (Html.BeginForm("Index", "Products", FormMethod.Get, new { @class = "well form-inline" }))
+{
+    <div>
+        <b>Tìm kiếm sản phẩm theo điều kiện:</b><br />
+        <label class="radio-inline">
+            <input type="radio" name="searchtype" value="pname" @(ViewBag.CurrentSearchType == "pname" || string.IsNullOrEmpty(ViewBag.CurrentSearchType) ? "checked" : "") /> Tên sản phẩm
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="searchtype" value="price" @(ViewBag.CurrentSearchType == "price" ? "checked" : "") /> Giá bán nhỏ hơn hoặc bằng
+        </label>
+    </div>
+    <div style="margin-top:10px;">
+        Nhập từ khóa tìm kiếm: @Html.TextBox("searchString", ViewBag.CurrentSearch as string, new { @class = "form-control", placeholder = "Nhập thông tin..." })
+        <input type="submit" value="Thực hiện Tìm" class="btn btn-primary" />
+    </div>
+}
+
+<p>
+    @Html.ActionLink("Thêm mới sản phẩm mới", "Create", null, new { @class = "btn btn-success" })
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 col-lg-3 text-center" style="margin-bottom: 20px; min-height: 380px;">
+            <div style="border: 1px solid #ddd; padding: 10px; border-radius: 4px; height: 100%; position: relative;">
+                @{
+                    var path = "~/Content/Images/" + (item.ImagePath ?? "no-image-news.png");
+                }
+                <a href="@Url.Action("Details", "Products", new { id = item.Pid })">
+                    <img src="@Url.Content(path)" width="150" height="150" class="img-thumbnail" style="object-fit: contain;" />
+                </a>
+                <br /><br />
+                Mã sản phẩm: <b>@item.Pid</b><br />
+                Tên sản phẩm: <span class="text-primary"><b>@item.ProdName</b></span><br />
+                Mô tả sơ lược: <small>@item.Description</small><br />
+                Giá bán tiền: <b class="text-danger">@string.Format("{0:N0}", item.Price) VNĐ</b><br /><br />
+
+                <div style="position: absolute; bottom: 15px; left: 0; right: 0;">
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.Pid }, new { @class = "btn btn-xs btn-warning" }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { id = item.Pid }, new { @class = "btn btn-xs btn-info" }) |
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.Pid }, new { @class = "btn btn-xs btn-danger" })
+                </div>
+            </div>
+        </div>
+    }
+</div>

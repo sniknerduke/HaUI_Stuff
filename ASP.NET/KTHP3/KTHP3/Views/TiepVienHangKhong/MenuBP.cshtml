@@ -1,0 +1,9 @@
+@model IEnumerable<KTHP3.Models.BoPhan>
+
+@foreach (var bp in Model)
+{
+    <li class="nav-item">
+        @Html.ActionLink(bp.TenBoPhan, "DanhSachTheoBoPhan", "TiepVienHangKhong", new { maBP = bp.MaBoPhan }, new { @class = "nav-link" })
+    </li>
+}
+

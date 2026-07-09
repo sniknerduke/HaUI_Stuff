@@ -1,0 +1,142 @@
+@model KTHP1.Models.TiepVien
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data", id = "formEdit" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>TiepVien</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaTV)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HoTen, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgaySinh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Luong, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Luong, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Luong, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SoLuongChuyenBay, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoLuongChuyenBay, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoLuongChuyenBay, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaBoPhan, "MaBoPhan", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaBoPhan", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaBoPhan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Ảnh hiện tại</label>
+            <div class="col-md-10">
+                <img id="imgPreview" src="@(string.IsNullOrEmpty(Model.Anh) ? "" : Url.Content("~/Content/Images/" + Model.Anh))" 
+                     alt="Ảnh tiếp viên" 
+                     style="width: 100px; height: auto; border: 1px solid #ccc; padding: 5px; border-radius: 5px; @(string.IsNullOrEmpty(Model.Anh) ? "display: none;" : "")" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ImageFile">Ảnh mới</label>
+            <div class="col-md-10">
+                <input type="file" id="ImageFile" name="ImageFile" class="form-control" accept="image/*" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btnSubmitEdit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        // Preview selected image file locally before upload
+        $("#ImageFile").change(function () {
+            var input = this;
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#imgPreview").attr("src", e.target.result).show();
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+
+        $("#btnSubmitEdit").click(function () {
+            var formData = new FormData();
+            formData.append("MaTV", $("#MaTV").val());
+            formData.append("MatKhau", $("#MatKhau").val());
+            formData.append("HoTen", $("#HoTen").val());
+            formData.append("NgaySinh", $("#NgaySinh").val());
+            formData.append("Luong", $("#Luong").val());
+            formData.append("SoLuongChuyenBay", $("#SoLuongChuyenBay").val());
+            formData.append("MaBoPhan", $("#MaBoPhan").val());
+            
+            var fileInput = document.getElementById("ImageFile");
+            if (fileInput.files.length > 0) {
+                formData.append("ImageFile", fileInput.files[0]);
+            }
+
+            $.ajax({
+                url: '@Url.Action("Edit", "TiepVienHangKhong")',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(res) {
+                    alert(res.msg);
+                    if (res.success && res.fileName) {
+                        // Refresh preview with actual server image path
+                        $("#imgPreview").attr("src", "/Content/Images/" + res.fileName).show();
+                    }
+                }
+            });
+        });
+    </script>
+}

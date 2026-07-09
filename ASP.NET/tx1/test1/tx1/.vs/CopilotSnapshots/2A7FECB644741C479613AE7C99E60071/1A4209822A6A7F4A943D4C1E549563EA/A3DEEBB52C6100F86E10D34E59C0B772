@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #0099CC;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .menu {
+            text-align:right;
+            background-color: #D5F1FF;
+            padding: 10px;
+        }
+
+            .menu a {
+                color: black;
+                text-decoration: none;
+                margin-right: 20px;
+                font-weight: bold;
+            }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        KIỂM TRA 1 - Khôi
+    </div>
+    <div class="menu">
+        @Html.ActionLink("Hiển thị danh sách", "HienThiDanhSach", "Sanphams") |
+        @Html.ActionLink("Nhập dữ liệu", "NhapDuLieu", "Sanphams")
+    </div>
+    <div class="content">
+        @RenderBody()
+    </div>
+</body>
+</html>

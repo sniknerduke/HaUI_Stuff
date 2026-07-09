@@ -1,0 +1,69 @@
+@model IEnumerable<KTHP1.Models.TiepVien>
+
+@{
+    ViewBag.Title = "Danh sách tiếp viên lương cao";
+}
+
+<h2>Danh sách tiếp viên lương cao (Luong >= 1600)</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Anh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BoPhan.TenBoPhan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatKhau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Luong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuongChuyenBay)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @if (!string.IsNullOrEmpty(item.Anh))
+            {
+                <img src="~/Content/Images/@item.Anh" alt="Ảnh tiếp viên" style="width: 50px; height: 50px; object-fit: cover; border-radius: 5px; border: 1px solid #ddd;" />
+            }
+            else
+            {
+                <span class="text-muted">Không có ảnh</span>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoPhan.TenBoPhan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatKhau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgaySinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Luong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongChuyenBay)
+        </td>
+    </tr>
+}
+
+</table>
+
+<h3>Tổng lương: @ViewBag.TongLuong</h3>

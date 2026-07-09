@@ -1,0 +1,44 @@
+﻿@model IEnumerable<tx2._1.Models.Product>
+
+@{
+    ViewBag.Title = "Quản lý Sản phẩm Rượu";
+}
+
+<h2>Quản lý Sản phẩm Rượu</h2>
+
+@using (Html.BeginForm("Index", "Products", FormMethod.Get))
+{
+    <p>
+        Tìm theo tên: @Html.TextBox("searchString", ViewBag.CurrentSearch as string, new { @class = "form-control", style = "display:inline-block; width:200px;" })
+        Giá từ: <input type="number" name="minPrice" value="@ViewBag.MinPrice" class="form-control" style="display:inline-block; width:120px;" />
+        đến: <input type="number" name="maxPrice" value="@ViewBag.MaxPrice" class="form-control" style="display:inline-block; width:120px;" />
+        <input type="submit" value="Tìm kiếm" class="btn btn-primary" />
+    </p>
+}
+
+<p>@Html.ActionLink("Thêm mới sản phẩm", "Create", null, new { @class = "btn btn-success" })</p>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Tên rượu</th>
+        <th>Danh mục</th>
+        <th>Giá bán</th>
+        <th>Hình ảnh</th>
+        <th>Hành động</th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.ProductName)</td>
+        <td>@Html.DisplayFor(modelItem => item.Catalogy.CatalogyName)</td>
+        <td>@Html.DisplayFor(modelItem => item.Price)</td>
+        <td>
+            <img src="@Url.Content("~/wwwroot/WineImages/" + (item.Image ?? "no-image-news.png"))" width="80" class="img-thumbnail" />
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id = item.ProductID }, new { @class = "btn btn-xs btn-warning" }) |
+            @Html.ActionLink("Chi tiết", "Details", new { id = item.ProductID }, new { @class = "btn btn-xs btn-info" }) |
+            @Html.ActionLink("Xóa", "Delete", new { id = item.ProductID }, new { @class = "btn btn-xs btn-danger" })
+        </td>
+    </tr>
+}
+</table>

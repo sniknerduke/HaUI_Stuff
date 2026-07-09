@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\KTHP2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|d:\\college stuff\\asp.net\\kthp2\\kthp2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|D:\\College stuff\\ASP.NET\\KTHP2\\kthp2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|D:\\College stuff\\ASP.NET\\KTHP2\\kthp2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|D:\\College stuff\\ASP.NET\\KTHP2\\kthp2\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|D:\\College stuff\\ASP.NET\\KTHP2\\kthp2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|D:\\College stuff\\ASP.NET\\KTHP2\\kthp2\\views\\employees\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\views\\employees\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|D:\\College stuff\\ASP.NET\\KTHP2\\kthp2\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{184E7EF9-D3B2-4C0D-8FF3-9A2BAFAD4D11}|KTHP2\\KTHP2.csproj|solutionrelative:kthp2\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "KTHP2\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "KTHP2\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T08:57:16.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KTHP2\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KTHP2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T08:57:03.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KTHP2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KTHP2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T08:44:46.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Views\\Employees\\Create.cshtml",
+              "RelativeDocumentMoniker": "KTHP2\\Views\\Employees\\Create.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Views\\Employees\\Create.cshtml",
+              "RelativeToolTip": "KTHP2\\Views\\Employees\\Create.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T07:29:49.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "KTHP2\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "KTHP2\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T06:53:36.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "KTHP2\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "KTHP2\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T06:53:31.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "KTHP2\\Models\\Model1.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP2\\KTHP2\\Models\\Model1.cs",
+              "RelativeToolTip": "KTHP2\\Models\\Model1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T06:18:47.687Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

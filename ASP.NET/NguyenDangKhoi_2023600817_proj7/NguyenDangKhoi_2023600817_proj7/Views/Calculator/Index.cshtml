@@ -1,0 +1,29 @@
+@{
+    ViewBag.Title = "Máy tính";
+}
+
+<form method="post" action="/Calculator/Index" style="margin: 20px;">
+    <table>
+        <tr>
+            <td>Nh?p s? th? 1</td>
+            <td><input type="number" step="any" name="num1" value="@ViewBag.Num1" required /></td>
+        </tr>
+        <tr>
+            <td>Nh?p s? th? 2</td>
+            <td><input type="number" step="any" name="num2" value="@ViewBag.Num2" required /></td>
+        </tr>
+        <tr>
+            <td>K?t qu?</td>
+            <td><input type="text" readonly value="@ViewBag.Result" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-top: 10px;">
+                <button type="submit" name="operation" value="C?ng">C?ng</button>
+                <button type="submit" name="operation" value="Tr?">Tr?</button>
+                <button type="submit" name="operation" value="Nhân">Nhân</button>
+                <button type="submit" name="operation" value="Chia">Chia</button>
+            </td>
+        </tr>
+    </table>
+    <div style="color:red; margin-top:10px;">@ViewBag.Error</div>
+</form>

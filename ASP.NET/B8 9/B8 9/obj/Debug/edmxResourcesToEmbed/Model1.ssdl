@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WineStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Catalogy">
+    <Key>
+      <PropertyRef Name="CatalogyID" />
+    </Key>
+    <Property Name="CatalogyID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CatalogyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="PurchasePrice" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Price" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Vintage" Type="nchar" MaxLength="20" />
+    <Property Name="CatalogyID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Image" Type="text" />
+    <Property Name="Region" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Products_Catalogy">
+    <End Role="Catalogy" Type="Self.Catalogy" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogy">
+        <PropertyRef Name="CatalogyID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CatalogyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WineStoreModelStoreContainer">
+    <EntitySet Name="Catalogy" EntityType="Self.Catalogy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Products_Catalogy" Association="Self.FK_Products_Catalogy">
+      <End Role="Catalogy" EntitySet="Catalogy" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

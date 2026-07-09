@@ -1,0 +1,42 @@
+@model KTHP4.Models.TiepVien
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Đăng nhập</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label for="username">Username</label>
+            <div class="col-md-10">
+                <input type="text" id="username" name="username"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pass">MK</label>
+            <div class="col-md-10">
+                <input type="text" id="pass" name="pass"/>
+            </div>
+        </div>
+
+        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Đăng nhập" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

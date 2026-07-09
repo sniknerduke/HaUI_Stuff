@@ -1,0 +1,38 @@
+﻿
+@model tx1.Models.SanPham
+
+@{
+    ViewBag.Title = "NhapDL";
+}
+
+<h2>NhapDL</h2>
+@using (Html.BeginForm("KetQua", "SanPham", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "Dữ liệu không hợp lệ, vui lòng kiểm tra lại.")
+
+    <p>
+        Mã sản phẩm: @Html.TextBoxFor(m => m.masp)
+        @Html.ValidationMessageFor(m => m.masp)
+    </p>
+    <p>
+        Hãng sản xuất:
+        @Html.RadioButtonFor(m => m.hangsx, "Apple") Apple
+        @Html.RadioButtonFor(m => m.hangsx, "Xiaomi") Xiaomi
+        @Html.ValidationMessageFor(m => m.hangsx)
+    </p>
+    <p>
+        Tên sản phẩm: @Html.TextBoxFor(m => m.tensp)
+        @Html.ValidationMessageFor(m => m.tensp)
+    </p>
+    <p>
+        Số lượng: @Html.TextBoxFor(m => m.soluong, new { type = "number", min = "1" })
+        @Html.ValidationMessageFor(m => m.soluong)
+    </p>
+    <p>
+        Giá tiền: @Html.TextBoxFor(m => m.giatien, new { type = "number", min = "1" })
+        @Html.ValidationMessageFor(m => m.giatien)
+    </p>
+
+    <input type="submit" value="Tính tổng tiền" />
+}

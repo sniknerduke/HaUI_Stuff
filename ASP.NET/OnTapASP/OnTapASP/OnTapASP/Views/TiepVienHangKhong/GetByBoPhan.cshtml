@@ -1,0 +1,57 @@
+﻿@model IEnumerable<OnTapASP.Models.TiepVien>
+
+@{
+    ViewBag.Title = "GetByBoPhan";
+}
+
+<h2>GetByBoPhan</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BoPhan.TenBoPhan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatKhau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Luong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuongChuyenBay)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoPhan.TenBoPhan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatKhau)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgaySinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Luong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongChuyenBay)
+        </td>
+        
+    </tr>
+}
+
+</table>

@@ -1,0 +1,62 @@
+@model NguyenDangKhoi_2023600817_proj7.Models.RegistrationModel
+@{
+    ViewBag.Title = "Registration Form";
+}
+
+<form method="post" action="/Registration/Index" style="background-color: #fdf5c9; padding: 20px; width: 400px; border: 1px solid #ccc; font-family: Arial, sans-serif;">
+    <h2 style="margin-top: 0; color: #5a5a2b;">Registration Form</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+            <td style="padding: 10px 0; width: 100px;">First Name</td>
+            <td><input type="text" name="FirstName" value="@Model?.FirstName" style="width: 90%;" /></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <td style="padding: 10px 0;">Last Name</td>
+            <td><input type="text" name="LastName" value="@Model?.LastName" style="width: 90%;" /></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <td style="padding: 10px 0;">Email</td>
+            <td><input type="email" name="Email" value="@Model?.Email" style="width: 90%;" /></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <td style="padding: 10px 0;">Password</td>
+            <td><input type="password" name="Password" style="width: 90%;" /></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <td style="padding: 10px 0;">City</td>
+            <td>
+                <select name="City" style="width: 150px;">
+                    <option value="Hanoi" @(Model?.City == "Hanoi" ? "selected" : "")>Hanoi</option>
+                    <option value="Da Nang" @(Model?.City == "Da Nang" ? "selected" : "")>Da Nang</option>
+                    <option value="Ho Chi Minh" @(Model?.City == "Ho Chi Minh" ? "selected" : "")>Ho Chi Minh</option>
+                </select>
+            </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ccc;">
+            <td style="padding: 10px 0;">Gender</td>
+            <td>
+                <input type="radio" name="Gender" value="Male" id="Male" @(Model?.Gender == "Male" ? "checked" : "") /> <label for="Male">Male</label>
+                <input type="radio" name="Gender" value="Female" id="Female" @(Model?.Gender == "Female" ? "checked" : "") /> <label for="Female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding: 15px 0 5px 0;">
+                <button type="submit" style="font-weight: bold; border: none; background: none; cursor: pointer; padding-left: 0;">Save</button>
+                <button type="reset" style="font-weight: bold; border: none; background: none; cursor: pointer;">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+@if (ViewBag.UserInfo != null)
+{
+    var info = (NguyenDangKhoi_2023600817_proj7.Models.RegistrationModel)ViewBag.UserInfo;
+    <div style="margin-top: 20px; padding: 15px; border: 1px solid #ccc; width: 370px;">
+        <h3 style="margin-top: 0;">Thông tin ?ã l?u:</h3>
+        <p><strong>First Name:</strong> @info.FirstName</p>
+        <p><strong>Last Name:</strong> @info.LastName</p>
+        <p><strong>Email:</strong> @info.Email</p>
+        <p><strong>City:</strong> @info.City</p>
+        <p><strong>Gender:</strong> @info.Gender</p>
+    </div>
+}

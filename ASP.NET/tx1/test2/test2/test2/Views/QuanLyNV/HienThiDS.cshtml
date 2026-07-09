@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "HienThiDS";
+}
+
+<h2>HienThiDS</h2>
+<h3>Danh sách số người làm < 20</h3>
+<table border="1" style="border-collapse:collapse ; width:100%">
+    <tr>
+        <th>Mã NV</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Số ngày làm</th>
+        <th>Lương ngày</th>
+    </tr>
+    @foreach (var i in ViewBag.List1)
+    {
+        <tr>
+            <th>@i.manv</th>
+            <th>@i.hoten</th>
+            <th>@i.diachi</th>
+            <th>@i.songaylam</th>
+            <th>@i.luongngay</th>
+        </tr>
+    }
+</table>
+
+<h3>Danh sách lương ngày > 90000</h3>
+<table border="1" style="border-collapse:collapse ; width:100%">
+    <tr>
+        <th>Mã NV</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Số ngày làm</th>
+        <th>Lương ngày</th>
+    </tr>
+    @foreach (var i in ViewBag.List2)
+    {
+        <tr>
+            <th>@i.manv</th>
+            <th>@i.hoten</th>
+            <th>@i.diachi</th>
+            <th>@i.songaylam</th>
+            <th>@i.luongngay</th>
+        </tr>
+    }
+</table>

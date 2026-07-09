@@ -1,0 +1,111 @@
+@model KTHP2.Models.Employee
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "formNhanVien" })) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Employee</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", id = "hoten" } })
+                @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.age, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.age, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.age, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.addr, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.addr, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.addr, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.salary, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.salary, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.salary, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.image, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.image, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.image, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.deptid, "deptid", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("deptid", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.deptid, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btnSave" value="Create" class="btn btn-default" />
+                <span id="ajaxResponse" style="margin-left: 15px; font-weight: bold;"></span>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $("#btnSave").click(function () {
+                // Kiểm soát dữ liệu hợp lệ phía Client
+                if ($("#hoten").val().trim() === "") {
+                    $("#ajaxResponse").css("color", "red").text("Vui lòng điền họ tên nhân viên!");
+                    return;
+                }
+
+                var formData = $("#formNhanVien").serialize();
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Employees/Create",
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            $("#ajaxResponse").css("color", "green").text(response.msg);
+                            $("#formNhanVien")[0].reset(); // Xóa dữ liệu cũ trên form
+                        } else {
+                            $("#ajaxResponse").css("color", "red").text(response.msg);
+                        }
+                    },
+                    error: function () {
+                        $("#ajaxResponse").css("color", "red").text("Lỗi hệ thống, không thể thực hiện gửi dữ liệu!");
+                    }
+                });
+            });
+        });
+    </script>
+}

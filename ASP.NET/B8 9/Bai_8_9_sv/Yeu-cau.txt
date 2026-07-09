@@ -1,0 +1,15 @@
+
+Bài tập:
+
+* Sử dụng database DatabaseEmp và thực hiện trên bảng Catalogy hoặc bảng Product:
+(Hướng dẫn bảng Catalogy có trong đề cương Bai8.pdf, bảng Product có trong đề cương Bai9.pdf)
+
+- Các label tiếng Việt
+- Thông báo lỗi tiếng Việt
+- Thêm các trycatch để bắt lỗi
+- Hiển thị, thêm, xóa, sửa có ảnh
+
+- Tìm kiếm theo tên, theo giá
+- Phân trang
+
+(Máy của trường dùng entityframework.6.4.4, laptop là 6.5.1)

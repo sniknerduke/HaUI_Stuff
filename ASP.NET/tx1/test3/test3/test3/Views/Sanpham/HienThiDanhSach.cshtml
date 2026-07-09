@@ -1,0 +1,33 @@
+﻿@{ ViewBag.Title = "Hiển thị danh sách"; }
+
+<h3>1. Danh sách sản phẩm có giá tiền > 100</h3>
+<table border="1" style="border-collapse:collapse; width:100%; text-align:center;">
+    <tr><th>Mã SP</th><th>Tên sản phẩm</th><th>Số lượng</th><th>Giá tiền</th><th>Giảm giá</th></tr>
+    @foreach (var item in ViewBag.List1)
+    {
+        <tr>
+            <td>@item.masp</td>
+            <td>@item.tensanpham</td>
+            <td>@item.soluong</td>
+            <td>@item.giatien</td>
+            <td>@(item.giamgia ? "Có" : "Không")</td>
+        </tr>
+    }
+</table>
+
+<br />
+
+<h3>2. Danh sách sản phẩm có giảm giá</h3>
+<table border="1" style="border-collapse:collapse; width:100%; text-align:center;">
+    <tr><th>Mã SP</th><th>Tên sản phẩm</th><th>Số lượng</th><th>Giá tiền</th><th>Giảm giá</th></tr>
+    @foreach (var item in ViewBag.List2)
+    {
+        <tr>
+            <td>@item.masp</td>
+            <td>@item.tensanpham</td>
+            <td>@item.soluong</td>
+            <td>@item.giatien</td>
+            <td>@(item.giamgia ? "Có" : "Không")</td>
+        </tr>
+    }
+</table>

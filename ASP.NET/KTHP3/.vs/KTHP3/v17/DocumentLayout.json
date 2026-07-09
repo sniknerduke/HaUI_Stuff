@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\KTHP3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\views\\tiepvienhangkhong\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\views\\tiepvienhangkhong\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\views\\tiepvienhangkhong\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\views\\tiepvienhangkhong\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\controllers\\tiepvienhangkhongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\controllers\\tiepvienhangkhongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\views\\tiepvienhangkhong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\views\\tiepvienhangkhong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|d:\\college stuff\\asp.net\\kthp3\\kthp3\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F31C0334-3B17-431C-A3A3-2120EECFFB27}|KTHP3\\KTHP3.csproj|solutionrelative:kthp3\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "RelativeDocumentMoniker": "KTHP3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "RelativeToolTip": "KTHP3\\Views\\TiepVienHangKhong\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T06:01:33.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "RelativeDocumentMoniker": "KTHP3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "RelativeToolTip": "KTHP3\\Views\\TiepVienHangKhong\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAACsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T05:58:43.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Web.config",
+              "RelativeDocumentMoniker": "KTHP3\\Web.config",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Web.config",
+              "RelativeToolTip": "KTHP3\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-17T05:55:36.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\Web.config",
+              "RelativeDocumentMoniker": "KTHP3\\Views\\Web.config",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\Web.config",
+              "RelativeToolTip": "KTHP3\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-17T05:55:33.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TiepVienHangKhongController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Controllers\\TiepVienHangKhongController.cs",
+              "RelativeDocumentMoniker": "KTHP3\\Controllers\\TiepVienHangKhongController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Controllers\\TiepVienHangKhongController.cs",
+              "RelativeToolTip": "KTHP3\\Controllers\\TiepVienHangKhongController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T04:08:59.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "RelativeDocumentMoniker": "KTHP3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "RelativeToolTip": "KTHP3\\Views\\TiepVienHangKhong\\Create.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T05:46:06.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KTHP3\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KTHP3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T05:38:36.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "KTHP3\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "KTHP3\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T05:35:31.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "KTHP3\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\KTHP3\\KTHP3\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "KTHP3\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T05:30:36.952Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

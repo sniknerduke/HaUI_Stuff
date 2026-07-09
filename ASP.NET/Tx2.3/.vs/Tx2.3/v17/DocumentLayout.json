@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\Tx2.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|d:\\college stuff\\asp.net\\tx2.3\\tx2.3\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|solutionrelative:tx2.3\\views\\sanphams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|d:\\college stuff\\asp.net\\tx2.3\\tx2.3\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|solutionrelative:tx2.3\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|d:\\college stuff\\asp.net\\tx2.3\\tx2.3\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|solutionrelative:tx2.3\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|d:\\college stuff\\asp.net\\tx2.3\\tx2.3\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|solutionrelative:tx2.3\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|d:\\college stuff\\asp.net\\tx2.3\\tx2.3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|solutionrelative:tx2.3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|d:\\college stuff\\asp.net\\tx2.3\\tx2.3\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA34611-FFFE-42A0-A83D-0C36E756242A}|Tx2.3\\Tx2.3.csproj|solutionrelative:tx2.3\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Views\\SanPhams\\Index.cshtml",
+              "RelativeDocumentMoniker": "Tx2.3\\Views\\SanPhams\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Views\\SanPhams\\Index.cshtml",
+              "RelativeToolTip": "Tx2.3\\Views\\SanPhams\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-27T01:08:40.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Views\\SanPhams\\Create.cshtml",
+              "RelativeDocumentMoniker": "Tx2.3\\Views\\SanPhams\\Create.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Views\\SanPhams\\Create.cshtml",
+              "RelativeToolTip": "Tx2.3\\Views\\SanPhams\\Create.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-27T01:00:55.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Tx2.3\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Tx2.3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T00:51:01.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SanPhamsController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Controllers\\SanPhamsController.cs",
+              "RelativeDocumentMoniker": "Tx2.3\\Controllers\\SanPhamsController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Controllers\\SanPhamsController.cs",
+              "RelativeToolTip": "Tx2.3\\Controllers\\SanPhamsController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T00:50:59.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "Tx2.3\\Models\\SanPham.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Models\\SanPham.cs",
+              "RelativeToolTip": "Tx2.3\\Models\\SanPham.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T00:48:01.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "Tx2.3\\Models\\Model1.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\Tx2.3\\Tx2.3\\Models\\Model1.cs",
+              "RelativeToolTip": "Tx2.3\\Models\\Model1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T00:47:57.015Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

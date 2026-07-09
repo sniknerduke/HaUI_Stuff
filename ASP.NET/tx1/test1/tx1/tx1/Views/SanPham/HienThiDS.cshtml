@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Hien thi danh sach";
+}
+
+<h2>Sản phẩm có giá tiền >=250</h2>
+<table border="1" style="border-collapse:collapse ; width:100%">
+    <tr>
+        <th>Ma sp</th>
+        <th>Hang sx</th>
+        <th>Ten sp </th>
+        <th>So luong</th>
+        <th>Gia tien</th>
+        <th>Tong tien</th>
+    </tr>
+    @foreach (var item in ViewBag.List1)
+    {
+        <tr>
+            <th>@item.masp</th>
+            <th>@item.hangsx</th>
+            <th>@item.tensp </th>
+            <th>@item.soluong</th>
+            <th>@item.giatien</th>
+        </tr>
+    }
+</table>
+
+
+<h3>2. Sản phẩm hãng Xiaomi</h3>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+    <tr><th>Mã SP</th><th>Hãng SX</th><th>Tên SP</th><th>Số lượng</th><th>Giá tiền</th></tr>
+    @foreach (var item in ViewBag.List2)
+    {
+        <tr>
+            <td>@item.masp</td>
+            <td>@item.hangsx</td>
+            <td>@item.tensp</td>
+            <td>@item.soluong</td>
+            <td>@item.giatien</td>
+        </tr>
+    }
+</table>
+

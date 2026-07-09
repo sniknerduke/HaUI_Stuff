@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\College stuff\\ASP.NET\\B8 9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\controllers\\catalogiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\controllers\\catalogiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\models\\wine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\models\\wine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|B8 9||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\models\\catalogy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\models\\catalogy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|solutionrelative:b8 9\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D4C7F7-2BE5-4BCE-9723-BA33692E909C}|B8 9\\B8 9.csproj|d:\\college stuff\\asp.net\\b8 9\\b8 9\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "B8 9\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "B8 9\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAlwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-22T07:15:57.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Model1.edmx",
+              "RelativeDocumentMoniker": "B8 9\\Model1.edmx",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "B8 9\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-04-22T07:11:51.203Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "B8 9\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "B8 9\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T07:10:10.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "B8 9\\Models\\Product.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Models\\Product.cs",
+              "RelativeToolTip": "B8 9\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:57:16.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Catalogy.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Models\\Catalogy.cs",
+              "RelativeDocumentMoniker": "B8 9\\Models\\Catalogy.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Models\\Catalogy.cs",
+              "RelativeToolTip": "B8 9\\Models\\Catalogy.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:57:04.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CatalogiesController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Controllers\\CatalogiesController.cs",
+              "RelativeDocumentMoniker": "B8 9\\Controllers\\CatalogiesController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Controllers\\CatalogiesController.cs",
+              "RelativeToolTip": "B8 9\\Controllers\\CatalogiesController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:56:33.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Wine.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Models\\Wine.cs",
+              "RelativeDocumentMoniker": "B8 9\\Models\\Wine.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Models\\Wine.cs",
+              "RelativeToolTip": "B8 9\\Models\\Wine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:53:42.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "B8 9\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "B8 9\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:45:09.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "B8 9\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "B8 9\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T06:38:47.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Web.config",
+              "RelativeDocumentMoniker": "B8 9\\Web.config",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Web.config",
+              "RelativeToolTip": "B8 9\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-22T06:06:39.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "B8 9",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\B8 9.csproj",
+              "RelativeDocumentMoniker": "B8 9\\B8 9.csproj",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\B8 9.csproj",
+              "RelativeToolTip": "B8 9\\B8 9.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-22T06:06:14.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Views\\Web.config",
+              "RelativeDocumentMoniker": "B8 9\\Views\\Web.config",
+              "ToolTip": "D:\\College stuff\\ASP.NET\\B8 9\\B8 9\\Views\\Web.config",
+              "RelativeToolTip": "B8 9\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-22T06:05:54.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

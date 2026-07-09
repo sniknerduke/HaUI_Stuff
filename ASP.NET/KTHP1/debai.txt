@@ -1,0 +1,19 @@
+LUYỆN TẬP THI IT6021-LT ASP.NET MVC
+1. Chạy file .sql để tạo cơ sở dữ liệu QuanLyTiepVien.
+2. Tạo project ASP.NET MVC, đặt tên là HoTen_MaSinhVien.
+3. Sử dụng Entity Framework để tạo model và Controller MVC:
+•	Tạo model cho bảng TiepVien.
+•	Tạo Controller TiepVienHangKhong với các views (CRUD) sử dụng Entity Framework.
+4. Cập nhật code để thêm tiếp viên vào bảng TiepVien sử dụng Ajax.
+5. Cập nhật code để sửa thông tin tiếp viên trong bảng TiepVien sử dụng Ajax.
+6. Xóa các link mặc định và thêm 2 link:
+•	“Danh sách”: Link tới action Index của controller TiepVienHangKhong.
+•	“Thêm tiếp viên”: Link tới action ThemTiepVien của controller TiepVienHangKhong.
+•	Đặt Index là action mặc định.
+7. Tạo action và view để hiển thị danh sách các tiếp viên có lương >=1600 và tổng lương của họ.
+8. Hiển thị tên các bộ phận từ bảng BoPhan dưới dạng các link và đưa vào menu.
+9. Khi click vào tên các bộ phận, hiển thị danh sách tiếp viên thuộc bộ phận đó.
+10. Thiết kế form login để người dùng đăng nhập.
+•	Thông báo lỗi nếu thông tin sai hoặc không nhập.
+•	Nếu đăng nhập thành công chuyển hướng tới action mặc định và hiển thị lời chào, thêm link “Logout” trên menu.
+11. Khi click vào link “Logout”, đăng xuất và thay thế link "Logout" bằng "Login".
