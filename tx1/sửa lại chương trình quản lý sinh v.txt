@@ -1,0 +1,21 @@
+sửa lại chương trình quản lý sinh viên trên bài giảng điện tử với giao diện độ họa  hãy kết nối chương trình với cơ sở dữ liệu mysql và thực hiện thao tác crud với cơ sở dữ liệu đó , để thực hiện thao tắc crud trên giao diện bổ sung các nút bấm sau : nút kết nối ( connect ) , nút cập nhật ( update ) , nút thêm ( add ) , xóa , sửa , kết thúc và nút hiển thị , khi chọn nút hiển thị chương trình sẽ hiển thị toàn bộ dữ liệu sinh viên ra màn hình với đối tượng jtable , hãy thực hiện chương trình trên với các phương pháp sau :
+- jdbc 
+- jpa
+- hibernate framework
+
+
+
+
+Bài để ktra tx1 : Vẫn là quản lý sinh viên ( dcm )
+Quản lý sinh viên với swing : https://viettuts.vn/bai-tap-java/bai-tap-quan-ly-sinh-vien-trong-java-swing ( của thầy cấm cãi )
+down về dịch try nghiên cữu kĩ rồi gõ lại , dùng mvc của swing
+- Yêu cầu phát biểu lại toàn bộ bài toán 
+- Chỉ ra yêu cầu chức năng và phi chức năng
+- Phân tích bài toán theo mô hình MVC của swing ( M-V-C )
+- Cài đặt các thành phần MVC
+- Sửa lại chương trình , chương trình kết nối với cơ sở dữ liệu MySQL với các phương pháp sau :
+	- JDBC
+	- JPA
+	- Hibernate
+
+	

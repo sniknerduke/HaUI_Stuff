@@ -1,0 +1,50 @@
+BÀI TẬP PHÂN TÍCH VÀ TỐI ƯU THUẬT TOÁN MẢNG (JAVA)
+I. Yêu cầu bài toán (Program Specifications)
+Chương trình được thiết kế để so sánh các phần tử trong hai mảng và xuất ra các phần tử trong arrayA có xuất hiện trong arrayB, kèm theo số lần xuất hiện của phần tử đó trong arrayB.
+
+Đặc điểm dữ liệu: Mỗi phần tử trong arrayA chỉ xuất hiện một lần. Các phần tử trong arrayB có thể xuất hiện nhiều lần.
+
+Ví dụ: * Nếu arrayA có: "DOG", "FOX", "COW"
+
+Nếu arrayB chứa "DOG" (2 lần), "FOX" (2 lần), "COW" (1 lần)
+
+Kết quả mong đợi: * DOG 2
+
+FOX 2
+
+COW 1
+
+II. Mã nguồn hiện tại (Current Code)
+Java
+class Arrays {
+    String [] arrayA = {
+        "dog", "cat", "rat", "fox", "frog",
+        "dinosaur", "cow", "bull"
+    };
+
+    String [] arrayB = {
+        "dog", "dog", "cat", "dog", "frog", "rat", "turtle",
+        "fox", "fox", "man", "man", "frog", "man"
+    };
+
+    public void compare() {
+        int counter = 0;
+        int indexB = 0;
+        for (int indexA = 0; indexA < arrayA.length; indexA++) {
+            for (indexB = 0; indexB < arrayB.length; indexB++) {
+                if (arrayA[indexA] == arrayB[indexB]) {
+                    counter++;
+                }
+            } // end for
+
+            if (counter > 0) {
+                System.out.println(arrayB[indexB - 1] + " " + counter);
+            }
+        } // end for
+    } // end compare()
+
+    public static void main(String args[]) {
+        Arrays a = new Arrays();
+        a.compare();
+    }
+} // end class Arrays
