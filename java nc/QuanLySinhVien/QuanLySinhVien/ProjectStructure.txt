@@ -1,0 +1,38 @@
+Project Structure & Architecture Explanation
+==========================================
+The project "QuanLySinhVien" (Student Management System) follows a standard 3-tier (or N-tier) application architecture, which separates the user interface, business/data access logic, and database connectivity into distinct packages. It is built as a Java Maven application and uses Swing for the GUI.
+
+Here is a breakdown of the overall structure:
+
+1. Project Root
+---------------
+* pom.xml:
+  This is the Maven configuration file. It manages the project's dependencies (such as JDBC drivers for database connections), build plugins, and project metadata.
+
+2. Packages (src/main/java/com/example)
+---------------------------------------
+* com.example.model
+  - SinhVien.java: The "Model" or "Entity" class. It represents the data structure of a student (e.g., id, name, date of birth, gender, major). This layer holds the data in memory.
+
+* com.example.db
+  - DatabaseConnection.java: Contains the logic to establish and manage connections to the underlying relational database (e.g., MySQL or SQL Server).
+  - testConnection.java: A simple utility class used to test if the database connection configuration is working correctly.
+
+* com.example.dao (Data Access Object)
+  - SinhVienDao.java: This class acts as the bridge between the application and the database. It isolates all database operations (CRUD: Create, Read, Update, Delete) from the rest of the application. The UI calls methods here (like insert(), get(), delete(), getAll()) instead of writing SQL queries directly.
+
+* com.example.ui
+  - MainForm.java: This is the graphical user interface (GUI) component built using Java Swing. It contains text fields, buttons, and a table to interact with the user. It captures user input, creates 'SinhVien' model objects, and passes them to 'SinhVienDao' to be saved or manipulated.
+
+* com.example
+  - Main.java: The main entry point of the application, responsible for launching the program (though MainForm.java also has its own main method for direct execution).
+
+Workflow Example (Adding a Student)
+-----------------------------------
+1. User enters data into the text fields in MainForm (ui layer).
+2. User clicks "Nhập" (Add/Save).
+3. MainForm collects data, validates it, and creates a SinhVien object (model layer).
+4. MainForm calls SinhVienDao.insert(sv) (dao layer).
+5. SinhVienDao connects to the DB via DatabaseConnection (db layer) and executes an SQL INSERT statement.
+6. The table on MainForm is refreshed by fetching the updated list of students via SinhVienDao.getAll().
+

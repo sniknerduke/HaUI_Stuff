@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" id="main-nav" style="display: none;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Student Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('students-section'); fetchStudents();">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('faculties-section'); fetchFaculties();">Faculties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('majors-section'); fetchMajors();">Majors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('classes-section'); fetchClasses();">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('courses-section'); fetchCourses();">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('enrollments-section'); fetchEnrollments();">Enrollments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('grades-section');">Grades</a>
+                    </li>
+                        <button class="btn btn-outline-light btn-sm px-3" onclick="logout()">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <div id="login-section">
+        <div class="d-flex align-items-center justify-content-center min-vh-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card border-0 shadow-lg form-card">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-4">
+                                <h3 class="fw-bold text-primary" id="auth-title">Welcome Back</h3>
+                                <p class="text-muted" id="auth-subtitle">Please login to your account</p>
+                            </div>
+                            <!-- Login Form -->
+                            <form id="login-form">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label fw-semibold">Username</label>
+                                    <input type="text" class="form-control form-control-lg" id="username" placeholder="Enter username" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label fw-semibold">Password</label>
+                                    <input type="password" class="form-control form-control-lg" id="password" placeholder="Enter password" required>
+                                </div>
+                                <div id="login-error" class="text-danger mb-3 text-center small fw-bold" style="display: none;"></div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold shadow-sm">Login</button>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="text-decoration-none small" onclick="toggleAuthMode()">Don't have an account? Register</a>
+                                </div>
+                            </form>
+                            
+                            <!-- Register Form (hidden by default) -->
+                            <form id="register-form" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="reg-username" class="form-label fw-semibold">Username</label>
+                                    <input type="text" class="form-control form-control-sm" id="reg-username" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reg-password" class="form-label fw-semibold">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="reg-password" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reg-fullname" class="form-label fw-semibold">Full Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="reg-fullname" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reg-email" class="form-label fw-semibold">Email</label>
+                                    <input type="email" class="form-control form-control-sm" id="reg-email" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="reg-role" class="form-label fw-semibold">Role</label>
+                                    <select class="form-select form-select-sm" id="reg-role">
+                                        <option value="ROLE_STAFF">Staff</option>
+                                        <option value="ROLE_ADMIN">Admin</option>
+                                    </select>
+                                </div>
+                                <div id="register-message" class="mb-3 text-center small fw-bold" style="display: none;"></div>
+                                <button type="submit" class="btn btn-success btn-lg w-100 fw-bold shadow-sm">Register</button>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="text-decoration-none small" onclick="toggleAuthMode()">Already have an account? Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container my-5 pb-5">
+        <!-- Students Section -->
+        <div id="students-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Students Directory</h2>
+                        <button class="btn btn-primary px-4 fw-semibold shadow-sm" onclick="openAddStudentModal()">
+                            + Add Student
+                        </button>
+                    </div>
+                    
+                    <!-- Search/Filter row for students -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="search-keyword" placeholder="Search by name, email...">
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select" id="search-class">
+                                <option value="">All Classes</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select" id="search-status">
+                                <option value="">All Statuses</option>
+                                <option value="DANG_HOC">Đang học</option>
+                                <option value="DINH_CHI">Đình chỉ</option>
+                                <option value="DA_TOT_NGHIEP">Đã tốt nghiệp</option>
+                                <option value="THOI_HOC">Thôi học</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary w-100" onclick="fetchStudents()">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle" id="students-table">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col" class="py-3">ID</th>
+                                    <th scope="col" class="py-3">Code</th>
+                                    <th scope="col" class="py-3">Name</th>
+                                    <th scope="col" class="py-3">Email</th>
+                                    <th scope="col" class="py-3">Phone</th>
+                                    <th scope="col" class="py-3">Status</th>
+                                    <th scope="col" class="py-3 text-end">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="students-tbody">
+                                <!-- Student rows will be injected here -->
+                            </tbody>
+                        </table>
+                        <!-- Pagination controls -->
+                        <div class="d-flex justify-content-end align-items-center mt-3" id="students-pagination">
+                            <button class="btn btn-sm btn-outline-secondary me-2" id="btn-prev-student" onclick="fetchStudents(currentStudentPage - 1)">Previous</button>
+                            <span id="student-page-info" class="small fw-bold">Page 1</span>
+                            <button class="btn btn-sm btn-outline-secondary ms-2" id="btn-next-student" onclick="fetchStudents(currentStudentPage + 1)">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faculties Section -->
+        <div id="faculties-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Faculties</h2>
+                        <button class="btn btn-primary px-4 fw-semibold shadow-sm" onclick="openAddFacultyModal()">+ Add Faculty</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light"><tr><th>ID</th><th>Code</th><th>Name</th><th class="text-end">Actions</th></tr></thead>
+                            <tbody id="faculties-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Majors Section -->
+        <div id="majors-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Majors</h2>
+                        <button class="btn btn-primary px-4 fw-semibold shadow-sm" onclick="openAddMajorModal()">+ Add Major</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light"><tr><th>ID</th><th>Code</th><th>Name</th><th>Faculty ID</th><th class="text-end">Actions</th></tr></thead>
+                            <tbody id="majors-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Classes Section -->
+        <div id="classes-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Classes</h2>
+                        <button class="btn btn-primary px-4 fw-semibold shadow-sm" onclick="openAddClassModal()">+ Add Class</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light"><tr><th>ID</th><th>Code</th><th>Name</th><th>Major ID</th><th class="text-end">Actions</th></tr></thead>
+                            <tbody id="classes-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses Section -->
+        <div id="courses-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Courses</h2>
+                        <button class="btn btn-primary px-4 fw-semibold shadow-sm" onclick="openAddCourseModal()">+ Add Course</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light"><tr><th>ID</th><th>Code</th><th>Name</th><th>Credits</th><th class="text-end">Actions</th></tr></thead>
+                            <tbody id="courses-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enrollments Section -->
+        <div id="enrollments-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Enrollments</h2>
+                        <button class="btn btn-primary px-4 fw-semibold shadow-sm" onclick="openAddEnrollmentModal()">+ Add Enrollment</button>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="search-enrollment-studentid" placeholder="Search by Student ID...">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary w-100" onclick="fetchEnrollmentsByStudent()">Search</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-outline-secondary w-100" onclick="fetchEnrollments()">Show All</button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light"><tr><th>ID</th><th>Student</th><th>Course</th><th>Semester</th><th class="text-end">Actions</th></tr></thead>
+                            <tbody id="enrollments-tbody"></tbody>
+                        </table>
+                        <div class="d-flex justify-content-end align-items-center mt-3" id="enrollments-pagination">
+                            <button class="btn btn-sm btn-outline-secondary me-2" id="btn-prev-enrollment" onclick="fetchEnrollments(currentEnrollmentPage - 1)">Previous</button>
+                            <span id="enrollment-page-info" class="small fw-bold">Page 1</span>
+                            <button class="btn btn-sm btn-outline-secondary ms-2" id="btn-next-enrollment" onclick="fetchEnrollments(currentEnrollmentPage + 1)">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grades Section -->
+        <div id="grades-section" style="display: none;">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <h2 class="h3 mb-0 fw-bold text-dark">Grades Transcript</h2>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="transcript-studentid" placeholder="Enter Student ID...">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary w-100" onclick="fetchTranscript()">Fetch Transcript</button>
+                        </div>
+                    </div>
+
+                    <div id="transcript-info" class="mb-3 p-3 bg-light rounded" style="display: none;">
+                        <h5 class="fw-bold text-primary mb-1" id="transcript-student-name"></h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-muted" id="transcript-student-code"></span>
+                            <span class="badge bg-success fs-6" id="transcript-gpa"></span>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light"><tr><th>Course Code</th><th>Course Name</th><th>Credits</th><th>Midterm</th><th>Final</th><th>Overall</th><th class="text-end">Actions</th></tr></thead>
+                            <tbody id="grades-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Modal -->
+    <div class="modal fade" id="studentModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="studentModalTitle">Add/Edit Student</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="student-form">
+                        <input type="hidden" id="student-id">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Student Code</label>
+                                <input type="text" class="form-control" id="stu-code" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="stu-firstname" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="stu-lastname" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="stu-email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="stu-phone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="stu-dob">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Gender</label>
+                                <select class="form-select" id="stu-gender">
+                                    <option value="MALE">Male</option>
+                                    <option value="FEMALE">Female</option>
+                                    <option value="OTHER">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Status</label>
+                                <select class="form-select" id="stu-status">
+                                    <option value="DANG_HOC">Đang học</option>
+                                    <option value="DINH_CHI">Đình chỉ</option>
+                                    <option value="DA_TOT_NGHIEP">Đã tốt nghiệp</option>
+                                    <option value="THOI_HOC">Thôi học</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Class ID (Number)</label>
+                                <input type="number" class="form-control" id="stu-classid" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="form-label">Address</label>
+                                <input type="text" class="form-control" id="stu-address">
+                            </div>
+                        </div>
+                        <div id="student-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save Student</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Faculty Modal -->
+    <div class="modal fade" id="facultyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="facultyModalTitle">Add/Edit Faculty</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="faculty-form">
+                        <input type="hidden" id="faculty-id">
+                        <div class="mb-3">
+                            <label class="form-label">Faculty Code</label>
+                            <input type="text" class="form-control" id="fac-code" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Faculty Name</label>
+                            <input type="text" class="form-control" id="fac-name" required>
+                        </div>
+                        <div id="faculty-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Major Modal -->
+    <div class="modal fade" id="majorModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="majorModalTitle">Add/Edit Major</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="major-form">
+                        <input type="hidden" id="major-id">
+                        <div class="mb-3">
+                            <label class="form-label">Major Code</label>
+                            <input type="text" class="form-control" id="maj-code" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Major Name</label>
+                            <input type="text" class="form-control" id="maj-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Faculty ID</label>
+                            <input type="number" class="form-control" id="maj-facultyid" required>
+                        </div>
+                        <div id="major-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Class Modal -->
+    <div class="modal fade" id="classModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="classModalTitle">Add/Edit Class</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="class-form">
+                        <input type="hidden" id="class-id">
+                        <div class="mb-3">
+                            <label class="form-label">Class Code</label>
+                            <input type="text" class="form-control" id="cls-code" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Class Name</label>
+                            <input type="text" class="form-control" id="cls-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Major ID</label>
+                            <input type="number" class="form-control" id="cls-majorid" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Academic Year</label>
+                            <input type="number" class="form-control" id="cls-year">
+                        </div>
+                        <div id="class-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Modal -->
+    <div class="modal fade" id="courseModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="courseModalTitle">Add/Edit Course</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="course-form">
+                        <input type="hidden" id="course-id">
+                        <div class="mb-3">
+                            <label class="form-label">Course Code</label>
+                            <input type="text" class="form-control" id="crs-code" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Course Name</label>
+                            <input type="text" class="form-control" id="crs-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Credits</label>
+                            <input type="number" class="form-control" id="crs-credits" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <input type="text" class="form-control" id="crs-desc">
+                        </div>
+                        <div id="course-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enrollment Modal -->
+    <div class="modal fade" id="enrollmentModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="enrollmentModalTitle">Add Enrollment</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enrollment-form">
+                        <div class="mb-3">
+                            <label class="form-label">Student ID</label>
+                            <input type="number" class="form-control" id="enr-studentid" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Course ID</label>
+                            <input type="number" class="form-control" id="enr-courseid" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Semester</label>
+                            <input type="text" class="form-control" id="enr-semester" required placeholder="e.g. 2026-HK1">
+                        </div>
+                        <div id="enrollment-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grade Modal -->
+    <div class="modal fade" id="gradeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="gradeModalTitle">Update Grade</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="grade-form">
+                        <input type="hidden" id="grd-enrollmentid">
+                        <div class="mb-3">
+                            <label class="form-label">Midterm Score</label>
+                            <input type="number" step="0.1" max="10" min="0" class="form-control" id="grd-midterm" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Final Score</label>
+                            <input type="number" step="0.1" max="10" min="0" class="form-control" id="grd-final" required>
+                        </div>
+                        <div id="grade-error" class="text-danger mb-3 small fw-bold" style="display: none;"></div>
+                        <button type="submit" class="btn btn-primary w-100">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

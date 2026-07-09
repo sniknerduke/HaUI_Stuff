@@ -1,0 +1,13 @@
+Viết chương trình ứng dụng mạng theo mô hình client server sử dụng giao thức tcp
+Chương trình có cấu trúc sau :
+Chương trình phía client để đăng nhập vào hệ thống có màn hình đăng nhập và cửa sổ guide với swing gồm có trường status để hiển thị trạng thái kết nối mạng, có các trường đăng nhập tài khoản user name sử dụng đối tượng textview và password sử dụng đối tượng password field có tùy chọn sử dụng đối tượng check box nếu được chọn thì sẽ là tạo tài khoản với các nút button sau: nút thứ nhất là connect nếu chọn nó thực hiện kết nối mạng và hiển thị trạng thái kết nối ở trường status là đối tượng nhãn label, nút thứ 2: nút tạo tài khoản mới khi được chọn nó sẽ lấy tài khoản gồm user name, password và gửi tới server để cập nhật cơ sở dữ liệu tài khoản, nút thêm tài khoản: khi được chọn sẽ xóa các trường thông tin về giá trị mặc định và con trỏ text chờ sẵn ở trường username để chờ nhập tài khoản mới, nút sửa khi được chọn sẽ hiển thị hộp thoại yêu cầu nhập tên tài khoản và lấy tài khoản hiển thị và cho phép sửa sau khi sửa xong sẽ hiển thị hộp thoại yêu cầu xác nhận có cập nhật . Có cập nhật thông tin sửa đổi hay khôhng , cho bieét để cập nhật chọn no để bỏ qua , bước xóa tài khoản khi chọn khi chọn yêu cầu nhập tên tài khoản khi xóa và có các nút tùy chọn , nếu chọn yes sẽ xóa tài khoản , chọn no thì bỏ qua . Nút kết thúc chương trình khi được chọn sẽ kết thúc chương trình cả client và server
+
+Gợi ý : tạo hộp thoại nên dungf đối tượng jOptionPane 
+
+
+Chương trình phía server
+Có kết nối cơ sở dữ liệu MySQL , đó là tài khoản DAO , yêu cầu tạo lớp tài khoản DAO với các phương thức getConnection để kết nối với cơ sở dữ liệu , các phương thức thực hiện thao tacs crud theo yêu cầu gửi tới client , trình kết nối cơ sở dữ liệu sử dụng JPA 
+
+Trước khi thực hiện tạo tài khoản trong MySQL và tạo sẵn 5tk , trong chương trình client khi không chọn tùy chọn thì đó là cửa sổ chỉ để đăng nhập và chỉ có nút login , nếu đăng nhập thành công hiển thị thông báo đăng nhập thành công  
+
+Yêu cầu toàn bộ csdl , code , docxx , chứa hình ảnh copy màn hình kết quả chương trình và chơi rar , với tên NguyenDangKhoi_2023600817 , cất trong thư mục tx12 ổ D:/

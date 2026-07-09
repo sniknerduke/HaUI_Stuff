@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/ProjectStructure.txt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/ProjectStructure.txt" />
+              <option name="updatedContent" value="Project Structure &amp; Architecture Explanation&#10;==========================================&#10;The project &quot;QuanLySinhVien&quot; (Student Management System) follows a standard 3-tier (or N-tier) application architecture, which separates the user interface, business/data access logic, and database connectivity into distinct packages. It is built as a Java Maven application and uses Swing for the GUI.&#10;&#10;Here is a breakdown of the overall structure:&#10;&#10;1. Project Root&#10;---------------&#10;* pom.xml: &#10;  This is the Maven configuration file. It manages the project's dependencies (such as JDBC drivers for database connections), build plugins, and project metadata.&#10;&#10;2. Packages (src/main/java/com/example)&#10;---------------------------------------&#10;* com.example.model&#10;  - SinhVien.java: The &quot;Model&quot; or &quot;Entity&quot; class. It represents the data structure of a student (e.g., id, name, date of birth, gender, major). This layer holds the data in memory.&#10;&#10;* com.example.db&#10;  - DatabaseConnection.java: Contains the logic to establish and manage connections to the underlying relational database (e.g., MySQL or SQL Server).&#10;  - testConnection.java: A simple utility class used to test if the database connection configuration is working correctly.&#10;&#10;* com.example.dao (Data Access Object)&#10;  - SinhVienDao.java: This class acts as the bridge between the application and the database. It isolates all database operations (CRUD: Create, Read, Update, Delete) from the rest of the application. The UI calls methods here (like insert(), get(), delete(), getAll()) instead of writing SQL queries directly.&#10;&#10;* com.example.ui&#10;  - MainForm.java: This is the graphical user interface (GUI) component built using Java Swing. It contains text fields, buttons, and a table to interact with the user. It captures user input, creates 'SinhVien' model objects, and passes them to 'SinhVienDao' to be saved or manipulated. &#10;&#10;* com.example&#10;  - Main.java: The main entry point of the application, responsible for launching the program (though MainForm.java also has its own main method for direct execution).&#10;&#10;Workflow Example (Adding a Student)&#10;-----------------------------------&#10;1. User enters data into the text fields in MainForm (ui layer).&#10;2. User clicks &quot;Nhập&quot; (Add/Save).&#10;3. MainForm collects data, validates it, and creates a SinhVien object (model layer).&#10;4. MainForm calls SinhVienDao.insert(sv) (dao layer).&#10;5. SinhVienDao connects to the DB via DatabaseConnection (db layer) and executes an SQL INSERT statement.&#10;6. The table on MainForm is refreshed by fetching the updated list of students via SinhVienDao.getAll().&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,2231 @@
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+1
+ 
+PHI
+Ế
+U GIAO BÀI T
+Ậ
+P
+ 
+BÀI 6
+ 
+–
+ 
+TH
+Ự
+C HÀNH
+ 
+L
+Ậ
+P TRÌNH K
+Ế
+T N
+Ố
+I 
+ 
+CƠ S
+Ở
+ 
+D
+Ữ
+ 
+LI
+Ệ
+U
+ 
+M
+Ụ
+C L
+Ụ
+C
+ 
+6.1 Xây d
+ự
+ng m
+ộ
+t Hibernate Project
+ 
+................................
+................................
+..........
+ 
+2
+ 
+6.1.1 T
+ả
+i và cài đ
+ặ
+t
+................................
+................................
+................................
+..
+ 
+2
+ 
+6.1.2 
+L
+ự
+a ch
+ọ
+n c
+ấ
+u hình
+ 
+................................
+................................
+.........................
+ 
+2
+ 
+6.1.3 Cài đ
+ặ
+t và s
+ử
+ 
+d
+ụ
+ng
+ 
+................................
+................................
+.........................
+ 
+3
+ 
+6.2 Xây d
+ự
+ng JPA project trong Eclipse
+ 
+................................
+................................
+..
+ 
+13
+ 
+6.3 Vi
+ế
+t các k
+ị
+ch b
+ả
+n ch
+ạ
+y th
+ử
+ 
+truy c
+ậ
+p CSDL
+ 
+................................
+........................
+ 
+13
+ 
+6.4 Vi
+ế
+t các k
+ị
+ch b
+ả
+n ki
+ể
+m th
+ử
+ 
+v
+ớ
+i công c
+ụ
+ 
+JMeter
+ 
+................................
+.................
+ 
+14
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+2
+ 
+6.1
+ 
+Xây d
+ự
+ng m
+ộ
+t Hibernate Project
+ 
+6.1.1 
+T
+ả
+i và cài đ
+ặ
+t
+ 
+Vào liên k
+ế
+t: 
+https://hibernate.org/
+ 
+ 
+ 
+6.1.2 
+L
+ự
+a ch
+ọ
+n c
+ấ
+u hình
+ 
+ 
+Các ứng dụng JAVA
+Thành phần 
+SessionFactory
+ 
+Cơ 
+sở dữ liệu
+ 
+Session
+ 
+JDBC
+ 
+JNDI
+ 
+JTA
+ 
+Đối tượng 
+Persistent
+ 
+Đối tượng 
+Transient
+ 
+Cơ sở dữ liệu
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+3
+ 
+ 
+ 
+6.1.3 Cài đ
+ặ
+t và s
+ử
+ 
+d
+ụ
+ng
+ 
+Đ
+ể
+ 
+s
+ử
+ 
+d
+ụ
+ng Hibernate, chúng ta s
+ẽ
+ 
+l
+ầ
+n lư
+ợ
+t th
+ự
+c hi
+ệ
+n các bư
+ớ
+c sau:
+ 
+a)
+ 
+T
+ạ
+o maven project.
+ 
+Trong Eclipse chúng ta th
+ự
+c hi
+ệ
+n theo
+ 
+ 
+Các ứng dụng JAVA
+Thành phần SessionFactory
+ 
+Session
+ 
+Đối tượng 
+Persistent
+ 
+Đối tượng 
+Transient
+ 
+Transaction
+ 
+TransactionFact
+ory
+ 
+ConnectionProvi
+der
+ 
+Cơ sở dữ liệu
+ 
+JNDI
+ 
+JDBC
+ 
+JTA
+ 
+Cơ sở dữ liệu
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+4
+ 
+ 
+ 
+ 
+b)
+ 
+Khai báo thư vi
+ệ
+n Hibernate
+ 
+và thư vi
+ệ
+n JDBC 
+ứ
+ng v
+ớ
+i lo
+ạ
+i database c
+ầ
+n 
+s
+ử
+ 
+d
+ụ
+ng.
+ 
+Sau khi t
+ạ
+o maven project và trong file pom.xml khai báo thư vi
+ệ
+n Hibernate 5, 
+và thư vi
+ệ
+n JDBC tương 
+ứ
+ng cho các lo
+ạ
+i Database khác nhau MySQL, Po
+stgreSQL, 
+Oracle, SQL Server, …
+ 
+Trong bài này, chúng ta 
+s
+ẽ
+ 
+s
+ử
+ 
+d
+ụ
+ng database MySQL. N
+ộ
+i dung file pom.xml 
+có th
+ể
+ 
+như sau:
+ 
+<
+project
+ 
+xmlns
+=
+"
+http://maven.apache.org/POM/4.0.0
+"
+ 
+xmlns:xsi
+=
+"
+http://www.w3.org/2001/XMLSchema
+-
+instance
+"
+ 
+
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+5
+ 
+xsi:schemaLocation
+=
+"
+http://maven.apache.org/POM/4.0.0 
+https://maven.apache.org/xsd/maven
+-
+4.0.0.xsd
+"
+>
+ 
+  
+<
+modelVersion
+>4.0.0</
+modelVersion
+>
+ 
+  
+<
+groupId
+>haui.fit</
+groupId
+>
+ 
+  
+<
+artifactId
+>MVExamples</
+artifactId
+>
+ 
+  
+<
+version
+>0.0.1
+-
+SNAPSHOT</
+version
+>
+ 
+  
+<
+name
+>Examples</
+name
+>
+ 
+  
+ 
+  
+<
+properties
+>
+ 
+        
+<
+project.build.sou
+rceEncoding
+>UTF
+-
+8</
+project.build.sourceEncoding
+>
+ 
+        
+<
+maven.compiler.source
+>1.8</
+maven.compiler.source
+>
+ 
+        
+<
+maven.compiler.target
+>1.8</
+maven.compiler.target
+>
+ 
+    
+</
+properties
+>
+ 
+  
+ 
+  
+<
+dependencies
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+https://mvnrepository.com/artifact/o
+rg.projectlombok/lombok 
+-
+-
+>
+ 
+        
+<
+dependency
+>
+ 
+            
+<
+groupId
+>org.projectlombok</
+groupId
+>
+ 
+            
+<
+artifactId
+>lombok</
+artifactId
+>
+ 
+            
+<
+version
+>1.18.10</
+version
+>
+ 
+        
+</
+dependency
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+https://mvnrepository.com/artifact/org.hibernate/hibernate
+-
+core 
+--
+>
+ 
+        
+<
+dependency
+>
+ 
+            
+<
+groupId
+>org.hibernate</
+groupId
+>
+ 
+            
+<
+artifactId
+>hibernate
+-
+core</
+artifactId
+>
+ 
+            
+<
+version
+>5.4.7.Final</
+version
+>
+ 
+        
+</
+dependency
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+MySQL 
+--
+>
+ 
+        
+<!
+--
+ 
+https://mvnrepository.com/artifact/mysql/mysql
+-
+connector
+-
+java 
+--
+>
+ 
+        
+<
+dependency
+>
+ 
+            
+<
+groupId
+>mysql</
+groupId
+>
+ 
+            
+<
+artifactId
+>mysql
+-
+connector
+-
+java</
+artifactId
+>
+ 
+            
+<
+version
+>5.1.49</
+version
+>
+ 
+        
+</
+dependency
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+Unit Test 
+--
+>
+ 
+        
+<
+dependency
+>
+ 
+            
+<
+groupId
+>junit</
+groupId
+>
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+6
+ 
+            
+<
+artifactId
+>junit</
+artifactId
+>
+ 
+            
+<
+version
+>3.8.1</
+version
+>
+ 
+            
+<
+scope
+>test</
+scope
+>
+ 
+        
+</
+dependency
+>
+ 
+    
+</
+depende
+ncies
+>
+ 
+  
+ 
+  
+ 
+</
+project
+>
+ 
+ 
+c)
+ 
+T
+ạ
+o các Entity và các mapping.
+ 
+Chúng ta s
+ử
+ 
+d
+ụ
+ng l
+ạ
+i các Entity 
+ở
+ 
+Bài s
+ố
+ 
+5, các em chuy
+ể
+n sang Project này đ
+ể
+ 
+làm vi
+ệ
+c
+ 
+ 
+package haui.fit;
+ 
+import java.util.Date;
+ 
+import javax.persistence.Column;
+ 
+import javax.persistence.Entity;
+ 
+import javax.persistence.GeneratedValue;
+ 
+import javax.persistence.GenerationType;
+ 
+import javax.persistence.Id;
+ 
+import javax.persistence.Table;
+ 
+ 
+import lombok.*;
+ 
+@Data
+ 
+@Entity
+ 
+@Table(name = "tbluser")
+ 
+public class UserObject {
+ 
+ 
+@Id
+ 
+ 
+@GeneratedValue(strategy
+ 
+= GenerationType.IDENTITY)
+ 
+ 
+private Long user_id;
+ 
+ 
+@Column
+ 
+ 
+private String user_fullname;
+ 
+ 
+@Column
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+7
+ 
+ 
+private String user_name;
+ 
+ 
+@Column
+ 
+ 
+private String user_pass;
+ 
+ 
+@Column(name = "user_created_date")
+ 
+ 
+private Date createdAt;
+ 
+ 
+@Column(name = "user_last_modi
+fied")
+ 
+ 
+private Date modifiedAt;
+ 
+ 
+@Column
+ 
+ 
+private String user_email;
+ 
+ 
+@Column
+ 
+ 
+private Long user_parent_id;
+ 
+}
+ 
+d)
+ 
+T
+ạ
+o file c
+ấ
+u hình Hibernate.
+ 
+Đ
+ể
+ 
+làm vi
+ệ
+c v
+ớ
+i Hibernate, chúng ta c
+ầ
+n ph
+ả
+i có m
+ộ
+t file c
+ấ
+u hình. Trong file 
+này, chúng ta s
+ẽ
+ 
+khai báo lo
+ạ
+i 
+database mà chúng ta s
+ẽ
+ 
+s
+ử
+ 
+d
+ụ
+ng, nh
+ữ
+ng thông tin c
+ầ
+n 
+thi
+ế
+t đ
+ể
+ 
+Hibernate có th
+ể
+ 
+k
+ế
+t n
+ố
+i đ
+ế
+n database đó và nh
+ữ
+ng Java object mà chúng ta 
+đ
+ã ánh x
+ạ
+ 
+t
+ừ
+ 
+java object (entity) v
+ớ
+i các table trong database.
+ 
+ 
+N
+ộ
+i dung file hibernate.cfg.xml như dư
+ớ
+i đây
+ 
+ 
+<?
+xml
+ 
+ve
+rsion
+=
+'1.0'
+ 
+encoding
+=
+'utf
+-
+8'
+?>
+ 
+<!
+DOCTYPE
+ 
+hibernate
+-
+configuration
+ 
+PUBLIC
+ 
+"
+-
+//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ 
+"http://www.hibernate.org/dtd/hibernate
+-
+configuration
+-
+3.0.dtd"
+>
+ 
+
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+8
+ 
+ 
+ 
+<
+hibernate
+-
+configuration
+>
+ 
+    
+<
+session
+-
+factory
+>
+ 
+        
+<!
+--
+ 
+Database setting 
+--
+>
+ 
+        
+<
+property
+ 
+name
+=
+"connection.driver_class"
+>
+com.mysql.jdbc.Driver
+</
+propert
+y
+>
+ 
+        
+<
+property
+ 
+name
+=
+"connection.url"
+>
+jdbc:mysql://localhost:3309/it6020003_d
+ata?serverTimezone=UTC
+&amp;
+useUnicode=true
+&amp;
+characterEncod
+ing=utf8
+</
+property
+>
+ 
+        
+<
+property
+ 
+name
+=
+"connection.username"
+>
+it6020003_huyhq
+</
+property
+>
+ 
+        
+<
+property
+ 
+name
+=
+"connection.password"
+>
+213456!@#
+</
+property
+>
+ 
+         
+ 
+        
+<!
+--
+ 
+JDBC connection pool (use the built
+-
+in) 
+--
+>
+ 
+        
+<
+property
+ 
+name
+=
+"connection.pool_size"
+>
+10
+</
+property
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+SQL dialect 
+--
+>
+ 
+        
+<
+property
+ 
+name
+=
+"dialect"
+>
+org.hibernate.dialect.MySQL5Dialect
+</
+property
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+Enable Hibernate's automatic session context 
+management 
+--
+>
+ 
+        
+<
+property
+ 
+name
+=
+"current_session_context_class"
+>
+thread
+</
+property
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+Disable the second
+-
+level cache 
+--
+>
+ 
+        
+<
+property
+ 
+name
+=
+"cache.provider_class"
+>
+org.hibernate.cache.internal.NoCa
+cheProvider
+</
+property
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+Show all executed SQL to console 
+--
+>
+ 
+  
+      
+<
+property
+ 
+name
+=
+"show_sql"
+>
+true
+</
+property
+>
+ 
+ 
+ 
+        
+<!
+--
+ 
+Entity mapping 
+--
+>
+ 
+        
+<
+mapping
+ 
+class
+=
+"haui.fit.UserObject"
+ 
+/>
+ 
+         
+ 
+    
+</
+session
+-
+factory
+>
+ 
+</
+hibernate
+-
+configuration
+>
+ 
+ 
+e)
+ 
+T
+ạ
+o đ
+ố
+i tư
+ợ
+ng SessionFactory
+ 
+SessionFactory là m
+ộ
+t interface giúp
+ 
+t
+ạ
+o ra session k
+ế
+t n
+ố
+i đ
+ế
+n database b
+ằ
+ng 
+cách đ
+ọ
+c các c
+ấ
+u hình
+ 
+trong Hibernate configuration.
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+9
+ 
+SessionFactory là đ
+ố
+i tư
+ợ
+ng ho
+ạ
+t đ
+ộ
+ng cư
+ờ
+ng đ
+ộ
+ 
+cao
+ 
+(heavy weight object) và 
+đư
+ợ
+c s
+ử
+ 
+d
+ụ
+ng thư
+ờ
+ng xuyên nên chúng ta s
+ẽ
+ 
+t
+ạ
+o m
+ộ
+t class singleton HibernateUtils 
+đ
+ể
+ 
+s
+ử
+ 
+d
+ụ
+ng sau này.
+ 
+N
+ộ
+i dung chi ti
+ế
+t 
+HibernateUtils.java
+ 
+package haui.fit.utils;
+ 
+ 
+import org.hibernate.SessionFactory;
+ 
+import org.hibernate.boot.Met
+adata;
+ 
+import org.hibernate.boot.MetadataSources;
+ 
+import 
+org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+ 
+import org.hibernate.service.ServiceRegistry;
+ 
+ 
+public class HibernateUtils {
+ 
+ 
+private static final SessionFactory sessionFactory = 
+buildSes
+sionFactory();
+ 
+ 
+ 
+private HibernateUtils() {
+ 
+ 
+ 
+super();
+ 
+ 
+}
+ 
+ 
+ 
+private static SessionFactory buildSessionFactory() {
+ 
+// Load hibernate.cfg.xml from resource folder by default
+ 
+ 
+ 
+ServiceRegistry serviceRegistry = new 
+Sta
+ndardServiceRegistryBuilder()
+ 
+ 
+ 
+ 
+ 
+.config
+ure() 
+ 
+ 
+ 
+ 
+ 
+.build();
+ 
+ 
+ 
+Metadata metadata = new 
+MetadataSources(serviceRegistry).getMetadataBuilder().build()
+;
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+10
+ 
+ 
+ 
+return metadata.getSessionFactoryBuilder().build();
+ 
+ 
+}
+ 
+ 
+ 
+public static SessionFactory getSessionFactory() {
+ 
+ 
+ 
+return sessionFactory;
+ 
+ 
+}
+ 
+ 
+ 
+public
+ 
+static void close() {
+ 
+ 
+ 
+getSessionFactory().close();
+ 
+ 
+}
+ 
+}
+ 
+ 
+f)
+ 
+S
+ử
+ 
+d
+ụ
+ng SessionFactory đ
+ể
+ 
+th
+ự
+c hi
+ệ
+n các câu l
+ệ
+nh truy v
+ấ
+n đ
+ế
+n database.
+ 
+Mã ngu
+ồ
+n hoàn ch
+ỉ
+nh đ
+ể
+ 
+th
+ự
+c hi
+ệ
+n
+ 
+ 
+package haui.fit;
+ 
+import java.util.Date;
+ 
+import java.util.List;
+ 
+import 
+org.hibernate.Session;
+ 
+import haui.fit.utils.*;
+ 
+public class HibernateExample1 {
+ 
+ 
+public st
+atic void main(String[] args) {
+ 
+ 
+ 
+try (Session session = 
+HibernateUtils.getSessionFactory().openSession();) {
+ 
+ 
+ 
+ 
+// Begin a unit of work
+ 
+ 
+ 
+ 
+session.beginTransaction(
+);
+ 
+ 
+ 
+ 
+// Insert user
+ 
+ 
+ 
+ 
+Date currentDate = new Date();
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+11
+ 
+ 
+ 
+ 
+UserObject user1 = new UserObject();
+ 
+ 
+ 
+ 
+ 
+user1.setUser_fullname("Hoàng Quang Huy");
+ 
+ 
+ 
+ 
+user1.setUser_name("huyhq456");
+ 
+ 
+ 
+ 
+user1.setUser_pass("123456"); 
+ 
+ 
+ 
+ 
+user1.setCreatedAt(currentDate);
+ 
+ 
+ 
+ 
+user1.setModifiedAt(currentDate);
+ 
+ 
+ 
+ 
+user1.setUser_email("huyhq@haui.edu.vn");
+ 
+ 
+ 
+ 
+user1.setUser_parent_id((long)20);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Long userId = (Long) session.save(user1);
+ 
+ 
+ 
+ 
+System.out.println("User id = " + userId);
+ 
+ 
+//
+ 
+ 
+ 
+// Count user from database
+ 
+//
+ 
+ 
+ 
+Long 
+numberOfUser = 
+session.createQuery("SELECT COUNT(id) FROM UserObject", 
+Long.class).uniqueResult();
+ 
+//
+ 
+ 
+ 
+System.out.println("Number of user in 
+database: " + numberOfUser);
+ 
+//
+ 
+//
+ 
+ 
+ 
+// Get user by id
+ 
+//
+ 
+ 
+ 
+UserObject savedUser = 
+session.find(UserObject.class, 
+userId);
+ 
+//
+ 
+ 
+ 
+System.out.prin
+tln("savedUser: " + savedUser);
+ 
+//
+ 
+ 
+ 
+// Update user
+ 
+//
+ 
+ 
+ 
+savedUser.setUser_fullname("Hoàng Vương B
+ả
+o");
+ 
+//
+ 
+ 
+ 
+session.update(savedUser);
+ 
+ 
+ 
+ 
+// Get users
+ 
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+12
+ 
+ 
+ 
+ 
+List<UserObject> users = 
+session.createQuery("FROM UserObject", 
+UserObje
+ct.class).list();
+ 
+ 
+ 
+ 
+user
+s.forEach(System.out::println);
+ 
+//
+ 
+ 
+ 
+// Delete user
+ 
+//
+ 
+ 
+ 
+session.delete
+(savedUser);
+ 
+//
+ 
+ 
+ 
+// Count user from database
+ 
+//
+ 
+ 
+ 
+numberOfUser = session.createQuery("SELECT 
+COUNT(id) FROM UserObject", Long.class).uniqueResult();
+ 
+//
+ 
+ 
+ 
+Syste
+m.out.println("Number of user 
+in 
+database: " + numberOfUser);
+ 
+ 
+ 
+ 
+// Commit the current resource transaction, 
+writing any unflushed changes to the
+ 
+ 
+ 
+ 
+// database.
+ 
+ 
+ 
+ 
+session.getTransaction().commit();
+ 
+ 
+ 
+}
+ 
+ 
+}
+ 
+}
+ 
+K
+ế
+t qu
+ả
+ 
+ch
+ạ
+y như h
+ình d
+ư
+ớ
+i
+ 
+ 
+
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+13
+ 
+6.2
+ 
+Xây d
+ự
+ng
+ 
+JPA project trong Eclipse
+ 
+ 
+Truy c
+ậ
+p
+ 
+trang
+ 
+https://www.objectdb.com/
+ 
+đ
+ể
+ 
+th
+ự
+c hi
+ệ
+n phát tri
+ể
+n m
+ộ
+t JPA Project
+ 
+ 
+ 
+Các yêu c
+ầ
+u c
+ụ
+ 
+th
+ể
+ 
+đư
+ợ
+c ch
+ỉ
+ 
+rõ trong liên k
+ế
+t trên.
+ 
+Xây d
+ự
+ng chương tr
+ình 
+đ
+ã 
+đư
+ợ
+c cung c
+ấ
+p d
+ữ
+ 
+li
+ệ
+u 
+ở
+ 
+các bư
+ớ
+c trư
+ớ
+c đây b
+ằ
+ng JPA 
+Project này
+. Đóng gói và ch
+ạ
+y th
+ử
+ 
+nghi
+ệ
+m.
+ 
+ 
+6.3
+ 
+Vi
+ế
+t các k
+ị
+ch b
+ả
+n ch
+ạ
+y th
+ử
+ 
+truy c
+ậ
+p CSDL
+ 
+K
+ị
+ch b
+ả
+n ch
+ạ
+y th
+ử
+ 
+nghi
+ệ
+m cho mô đun User gi
+ả
+ 
+s
+ử
+ 
+như
+ 
+phương th
+ứ
+c main
+ 
+sau
+ 
+public
+ 
+static
+ 
+void
+ 
+main(String[] 
+args
+) {
+ 
+ 
+ 
+// B
+ộ quản lý kết nối
+ 
+ 
+ 
+ConnectionPool 
+cp
+ 
+= 
+new
+ 
+ConnectionPoolImpl();
+ 
+ 
+ 
+ 
+// Đ
+ối t
+ư
+ợng thực thi chức năng
+ 
+ 
+ 
+UserFunction 
+uf
+ 
+= 
+new
+ 
+UserFunctionImpl(
+cp
+);
+ 
+ 
+ 
+ 
+//Đ
+ối t
+ư
+ợng ng
+ư
+ời sử dụng mới
+ 
+ 
+ 
+UserObject 
+nItem
+ 
+= 
+new
+ 
+UserObject();
+ 
+ 
+ 
+nItem
+.setUser_name(
+"JavaNangcao"
+);
+ 
+ 
+ 
+nItem
+.setUser_email(
+"huyhq@haui.edu.vn"
+);
+ 
+ 
+ 
+nItem
+.setUser_created_date(
+"10/05/24"
+);
+ 
+ 
+ 
+nItem
+.setUser_fullname(
+"Hoang Quang Huy"
+);
+ 
+ 
+ 
+nItem
+.setUser_parent_id(20);
+ 
+ 
+ 
+nItem
+.setUser_pass(
+"123456"
+);
+ 
+ 
+ 
+ 
+ 
+ 
+boolean
+ 
+results
+ 
+= 
+uf
+.addUser(
+nItem
+);
+ 
+ 
+ 
+if
+(!
+results
+) {
+ 
+ 
+ 
+ 
+System.
+out
+.print(
+"
+------
+KHÔNG THÀNH CÔNG
+--
+----
+\
+n"
+);
+ 
+ 
+ 
+}
+ 
+ 
+ 
+ 
+
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+14
+ 
+ 
+ 
+// Danh sách đ
+ối t
+ư
+ợng
+ 
+ 
+ 
+ArrayList<UserObject> 
+list
+ 
+= 
+uf
+.getUsers(
+null
+, 0, (
+byte
+) 
+10);
+ 
+ 
+ 
+list
+.forEach(
+u
+ 
+-
+> {
+ 
+ 
+ 
+ 
+System.
+out
+.println(
+u
+);
+ 
+ 
+ 
+});
+ 
+ 
+ 
+}
+ 
+ 
+Các k
+ị
+ch b
+ả
+n ch
+ạ
+y khác cho các mô đun khác yêu c
+ầ
+u tương
+ 
+t
+ự
+ 
+ 
+6.4
+ 
+Vi
+ế
+t các k
+ị
+ch b
+ả
+n ki
+ể
+m th
+ử
+ 
+v
+ớ
+i công c
+ụ
+ 
+JMeter
+ 
+a)
+ 
+Cài đ
+ặ
+t công c
+ụ
+ 
+JMeter
+ 
+b)
+ 
+C
+ấ
+u hình ki
+ể
+m th
+ử
+ 
+như h
+ình minh h
+ọ
+a sau
+ 
+cho các mô đun và toàn chương 
+trình
+ 
+ 
+
+
+ 
+L
+Ậ
+P TRÌNH JAVA NÂNG CAO 
+–
+ 
+IT6020
+ 
+ 
+ 
+15
+ 
+ 
+ 
+YÊU C
+Ầ
+U CHUNG:
+ 
+
+ 
+Chương tr
+ình cài 
+đ
+ặt 
+đư
+ợc 
+qu
+ản lý theo từng 
+nhi
+ệm vụ
+ 
+
+ 
+Chu
+ẩn bị dữ liệu đầy đủ v
+à 
+ch
+ạy demo
+ 
+
+ 
+Vi
+ết chú thích cho từng khối lệnh
+ 
+
+ 
+Vi
+ết báo cáo ngắn mô tả 
+các k
+ỹ thuật xử lý SQL
+ 

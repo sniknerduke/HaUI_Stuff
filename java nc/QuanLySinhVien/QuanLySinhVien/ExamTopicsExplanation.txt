@@ -1,0 +1,57 @@
+How to Implement Your Exam Topics in This Project (Explained for a 5-Year-Old!)
+=============================================================================
+
+If you had to add all your teacher's exam topics into your current Student Management project, here is exactly what each topic means, an easy analogy to understand it, and how you would build it.
+
+-----------------------------------------------------------------------------
+1. GUI (Giao diện người dùng - Graphical User Interface)
+-----------------------------------------------------------------------------
+🍔 The Analogy: The Restaurant Menu and the Waiter.
+Imagine you go to a restaurant. You don't walk into the kitchen and cook. You look at a menu, point at a burger, and the waiter takes your order.
+In your app, the "GUI" is the menu and the waiter. It is made using Java Swing.
+
+🛠️ How it is used in your project:
+You already have this! Your `MainForm.java` is the GUI. It has buttons (JButton), typing boxes (JTextField), and a table (JTable) so normal humans can click around instead of typing green hacker code in a black terminal.
+
+-----------------------------------------------------------------------------
+2. Multithreading with SwingWorker (Đa luồng với SwingWorker)
+-----------------------------------------------------------------------------
+🍔 The Analogy: Hiring a Dishwasher so the Waiter doesn't get stuck.
+Imagine your Waiter (the GUI) has to wash 10,000 dishes (save 10,000 students to the database). If the Waiter washes the dishes, they CANNOT talk to new customers! The restaurant freezes. Customers get angry.
+"SwingWorker" is a helper you hire. The Waiter says: "Hey SwingWorker, go wash these dishes in the back!" The Waiter goes back to smiling at customers, and when the SwingWorker finishes, he taps the Waiter on the shoulder and says "All done!"
+
+🛠️ How to implement it in your project:
+Right now, when you click "Nhập" (Save), the screen waits for the database. If your database is slow, your app freezes and says "Not Responding".
+To fix this, you would create a `SwingWorker`:
+- `doInBackground()`: This is the backroom. You put `dao.insert(sv)` in here. It secretly saves the student without freezing the screen.
+- `done()`: This happens when the background job finishes. You put `JOptionPane.showMessageDialog("Success!")` here so the UI can pop up a message cheerfully.
+
+-----------------------------------------------------------------------------
+3. Network Programming (Lập trình mạng - Sockets / RMI)
+-----------------------------------------------------------------------------
+🍔 The Analogy: Calling for Pizza Delivery.
+Right now, your app does everything in one house. The GUI and the Database are like you cooking in your own kitchen.
+Network programming means your friend is in another city with the Database, and you have to call them on the phone (Network) to ask them to save the student.
+
+🛠️ How to implement it in your project:
+You would split your single app into TWO separate apps:
+1. The Server App (The Kitchen): An app running on a different computer that listens for phone calls (Socket server) and talks to the Database.
+2. The Client App (Your current GUI): When the user clicks "Save", instead of talking to `SinhVienDao` directly, the app connects to the Server's IP address and sends a text message over the internet saying: "ADD_STUDENT: John, 20/10/2000, IT".
+The Server receives it, saves it, and sends back "SUCCESS".
+
+-----------------------------------------------------------------------------
+4. Database Connection (JDBC vs. JPA vs. Hibernate)
+-----------------------------------------------------------------------------
+🍔 The Analogy: The Filing Cabinet.
+You have a bunch of student files and you need to put them in a metal filing cabinet (MySQL Database).
+
+Option A: JDBC (Java Database Connectivity) - The "Do It Yourself" way.
+- How it works: You walk to the cabinet, unlock it, find drawer 3, open it, find folder 'SinhVien', slide the paper in, and lock it.
+- In Java: You write exact SQL queries like `INSERT INTO SinhVien VALUES (?, ?, ?)`.
+- Your Project: You are CURRENTLY using JDBC in `SinhVienDao.java`.
+
+Option B: Hibernate / JPA (Java Persistence API) - The "Smart Assistant" way.
+- How it works: You hire a smart assistant named Hibernate. You just hand them the Student paper and say, "Save this." Hibernate knows exactly which cabinet, which drawer, and which folder to use. You don't have to explain it.
+- In Java: You don't write SQL queries anymore using `INSERT INTO...`. Instead, you add `@Entity` on top of your `SinhVien.java` class. Then you just write `entityManager.persist(sinhVien)`. Hibernate automatically turns it into SQL and saves it!
+- How to implement it: Completely delete all the messy `INSERT INTO`/`SELECT *` SQL strings in `SinhVienDao.java`. Install the Hibernate tool in `pom.xml`, and let it auto-save your `SinhVien` objects directly!
+

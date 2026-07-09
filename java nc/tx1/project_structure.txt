@@ -1,0 +1,23 @@
+Cấu trúc mã nguồn dự án Client-Server:
+
+```text
+tx1/
+├── pom.xml                   
+├── mvnw / mvnw.cmd           
+└── src/
+    └── main/
+        ├── java/
+        │   ├── client/
+        │   │   └── ClientGUI.java       
+        │   ├── dao/
+        │   │   └── TaiKhoanDAO.java     
+        │   ├── entity/
+        │   │   └── TaiKhoan.java       
+        │   └── server/
+        │       ├── ServerMain.java      
+        │       └── ClientHandler.java   
+        │
+        └── resources/
+            └── META-INF/
+                └── persistence.xml      
+```
